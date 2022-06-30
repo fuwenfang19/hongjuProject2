@@ -1,0 +1,173 @@
+.expenseType-page{
+  .chargeBillStyleBtn{
+    width:260px;
+    height:55px;
+    line-height: 55px;
+    padding:0 15px;
+    box-sizing:border-box;
+    color:#697b8c;
+    cursor: pointer;
+    position: relative;
+    font-size:16px;
+    .arrow{
+      filter: none;
+      font-size: 12px;
+      transform: scale(0.75) rotate(0);
+      -ms-filter: "progid:DXImageTransform.Microsoft.Matrix(sizingMethod='auto expand', M11=1, M12=0, M21=0, M22=1)";
+      zoom: 1;
+      font-style: normal;
+      vertical-align: baseline;
+      text-align: center;
+      text-transform: none;
+      line-height: 1;
+      text-rendering: optimizeLegibility;
+      position: absolute;
+      color: rgba(0, 0, 0, 0.43);
+      display: inline-block;
+      font-weight: bold;
+      line-height: 40px;
+      vertical-align: middle;
+      transition: transform 0.24s;
+      top: 8px;
+      left: 15px;
+    }
+    .arrow:before {
+      content: "\E61F";
+      font-family: "anticon" !important;
+    }
+    .chargeBillStyleBtnInside{
+      padding-left: 17px;
+      width:230px;
+      height: 55px;
+      line-height: 55px;
+      box-sizing:border-box;
+      border-bottom: 1px solid $hongju-hr-color;
+    }
+  }
+  .chargeBillStyleBtn:hover{
+    background-color: #f7f7f7;
+  }
+  .ant-collapse-item{
+      margin-bottom:0 !important;
+  }
+   .content-left{
+     padding:5px 0;
+   }
+}
+.chargeBillModal{
+  .ant-modal-body{
+    padding:20px;
+  }
+    .ant-modal-header{
+      margin:0 20px;
+      padding: 14px 0px;
+      border-bottom: 1px solid $hongju-hr-color;
+    }
+    .ant-modal{
+      top:50px;
+    }
+    .ModalTitle{
+      display: inline-block;
+      width:520px;
+      padding-left:10px;
+    }
+    .ModalTitleEdit{
+      cursor:pointer;
+      font-weight: normal;
+      margin-right: 10px;
+    }
+    .ModalTitleEditStatus{
+      color:#999;
+      cursor:default;
+    }
+    .chargeBillModalContent{
+      height:400px;
+      font-size:14px;
+      .chargeBillModalContentHead{
+        height:36px;
+        line-height: 36px;
+        background: #f6f6f6;
+        color:#999;
+        .chargeBillModalContentHeadLeft{
+          float:left;
+          width:205px;
+          box-sizing: border-box;
+          padding-left:15px;
+          border-right:1px solid #eee;
+        }
+        .chargeBillModalContentHeadRight{
+          float:left;
+          width:420px;
+          padding-left:15px;
+          box-sizing: border-box;
+          border-left:1px solid #d9d9d9;
+        }
+      }
+      .chargeBillModalContentBody{
+        max-height:350px;
+        overflow-y: auto;
+        li{
+          height:45px;
+          line-height: 45px;
+          border-bottom:1px solid $hongju-hr-color;
+          color:#333;
+          padding:0 15px;
+          .chargeBillModalContentBodyLeft{
+            float:left;
+            width:188px;
+            box-sizing: border-box;
+          }
+          .chargeBillModalContentBodyRight{
+            float:left;
+            padding-left:15px;
+            width:404px;
+            text-overflow: ellipsis;
+            overflow: hidden;
+            white-space: nowrap;
+            box-sizing: border-box;
+            height:45px;
+            line-height: 45px;
+            .ant-dropdown-trigger{
+              position: relative;
+              .anticon-caret-down{
+                top:-12px;
+                position: absolute;
+              }
+            }
+            .chargeBillItemDown{
+              display: inline-block;
+              width:375px;
+              text-overflow: ellipsis;
+              overflow: hidden;
+              white-space: nowrap;
+            }
+          }
+        }
+      }
+      .ant-spin-spinning{
+        position: absolute;
+        left:240px;
+        top:200px;
+      }
+    }
+    .ant-modal-footer{
+      padding: 10px 16px 20px 10px;
+      .ant-btn{
+         border-radius:2px;
+         width:86px;
+         height:32px;
+      }
+      .ant-btn-primary {
+        margin-left:14px;
+      }
+      .ant-btn-primary[disabled]{
+        background:rgba(236,112,64,0.50);
+        border-color:rgba(236,112,64,0.50);
+        opacity:0.5;
+        color:#ffffff;
+      }
+    }
+    .ant-modal-footer-div{
+      height:29px;
+    }
+  }

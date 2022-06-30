@@ -1,0 +1,58 @@
+.supplier-page {
+  .searchbar1 {
+    text-indent: 20px;
+  }
+  .content-left {
+    position: relative;
+
+  }
+  .supplierEdit {
+    margin-top: 20px;
+  }
+  .head-left {
+    line-height: 45px !important;
+    padding-left: 7px;
+  }
+  .info-label {
+    width: 85px;
+  }
+  .info-value {
+
+  }
+  .supplier-wraper {
+    position: absolute;
+    width: 100%;
+    top: 110px;
+    bottom: 0px;
+    overflow: auto;
+    margin: 5px -5px;
+    .supplier-item {
+      padding: 0 10px;
+      line-height: 34px;
+      cursor: pointer;
+    }
+    //.supplier-item:hover {
+    //  color:#108ee9;
+    //}
+    .currentSupplier {
+      background: #f6f6f6;
+    }
+  }
+}
+.supplier-content-right {
+  .ant-form-item-label {
+    max-width: 110px;
+  }
+  .required {
+    label:after {
+      content: '*';
+      color: red;
+      display: inline-block;
+    }
+  }
+  .btn-cancel {
+    background: #fff !important;
+    color: #449ff7 !important;
+    border: 1px solid #449ff7 !important;
+  }
+}

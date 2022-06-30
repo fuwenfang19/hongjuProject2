@@ -1,0 +1,29 @@
+.page {
+  .download_and_upload {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 300px;
+    height: 80%;
+
+    div {
+      text-align: center;
+      h3 {
+        margin: 10px;
+        font-size: 14px;
+        font-weight: normal;
+        color: $hongju-tip-color;
+      }
+    }
+    .btn-container {
+      margin: 10px;
+      .ant-btn {
+        margin: 6px;
+        background-color: #fff;
+        color: #000;
+        border: 1px solid #cccccc;
+        border-radius: 2px;
+      }
+    }
+  }
+}

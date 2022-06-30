@@ -1,0 +1,27 @@
+
+.budgetApproved-page{
+  .ant-table-selection-down{
+    display: none;
+  }
+  .budgetUnapproved-right-top1{
+    width: 100%;
+    height: 100px;
+    //background: red;
+    position: relative;
+    .budgetUnapproved-top-content{
+      width: 100px;
+      position: absolute;
+      bottom: 30px;
+      right: 12px;
+      cursor: pointer;
+    }
+  }
+  .budgetUnapproved-right-top2{
+    width: 100%;
+    height: 90px;
+    //background: pink;
+  }
+  .back{
+    display: none;
+  }
+}

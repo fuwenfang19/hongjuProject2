@@ -1,0 +1,45 @@
+.workflow-page {
+  .content-left {
+    padding: 0;
+  }
+  .ant-collapse-content {
+    padding: 0;
+    overflow: auto;
+  }
+
+  .left-type-list-container {
+    .leftCollapseListWrap{
+      overflow: hidden;
+    }
+    padding-left: 26px;
+    .ant-collapse-content-box {
+      overflow: hidden;
+      .ant-collapse-content-box{
+        overflow: hidden;
+      }
+    }
+    .design-num {
+      display: inline-block;
+      background-color: #999;
+      color: #fff;
+      height: 18px;
+      width: 18px;
+      line-height: 18px;
+      border-radius: 9px;
+      text-align: center;
+    }
+
+    .design-name {
+      cursor: pointer;
+      padding-left: 20px;
+    }
+
+    .leftCollapseSubListItem {
+      width: 230px;
+      text-overflow: ellipsis;
+      overflow: hidden;
+      white-space: nowrap;
+      vertical-align: center;
+    }
+  }
+}

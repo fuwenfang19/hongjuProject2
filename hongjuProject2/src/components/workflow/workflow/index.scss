@@ -1,0 +1,31 @@
+.workflow-page {
+  .content-right {
+    .edit-name-img {
+      height: 12px;
+      width: 12px;
+      display: none;
+    }
+    .label-name {
+      display: inline-block;
+      padding-right: 4px;
+      max-width: 300px;
+      text-overflow: ellipsis;
+      overflow: hidden;
+      white-space: nowrap;
+    }
+    .design-name-edit:hover {
+      .edit-name-img {
+        display: inline-block;
+        vertical-align: text-top;
+        position: relative;
+        top: -15px;
+      }
+    }
+    .name-highlight {
+      color: $hongju-blue;
+    }
+    .operate-highlight {
+      color: $hongju-color;
+    }
+  }
+}

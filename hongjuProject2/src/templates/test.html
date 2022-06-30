@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>测试界面</title>
+
+
+	<script>
+		let input, box, state;
+
+		function initState() {
+			state = {
+				isInBox: false,
+				showBox: false,
+			};
+			render(state);
+		}
+
+
+		function setState(newState) {
+			state = Object.assign({}, state, newState);
+			console.log(state);
+			render(state);
+		}
+
+		function render(state) {
+			root = document.querySelector('#renderRoot');
+			const showOrHide = state.showBox ? "block" : "none";
+			const html =
+				'<div id="box" style="background-color: red;width: 150px;height: 100px;' +
+				'display: ' + showOrHide + '" ' +
+				'onmousedown="onMouseDown();"onclick="onClick();">' +
+				'档案选择' +
+				'</div>';
+			root.innerHTML = html;
+			input = document.querySelector('#input');
+			box = document.querySelector('#box');
+		}
+
+		function onBlur() {
+			if (state.isInBox) {
+				state.isInBox = false;
+			} else {
+				console.log('执行onBlur');
+				hideBox();
+			}
+		}
+
+
+		function containerClick() {
+			showBox();
+		}
+		function onFocus() {
+			console.log('focus');
+//			showBox();
+		}
+
+		function onClick() {
+			input.focus();
+		}
+
+		function onMouseDown() {
+			state.isInBox = true;
+		}
+
+		function hideBox() {
+			setState({
+				showBox: false
+			})
+		}
+		function showBox() {
+			setState({
+				showBox: true
+			})
+		}
+	</script>
+
+
+</head>
+<body onload="initState();">
+<div id="root">
+	<input id="input" type="text" onblur="onBlur()" onfocus="onFocus();">
+	<div id="renderRoot"></div>
+</div>
+</body>
+</html>
+
+

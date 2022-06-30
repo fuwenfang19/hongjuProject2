@@ -1,0 +1,30 @@
+.project-page {
+  .content-left {
+    .ant-btn{
+      font-size:14px;
+    }
+    .company-name {
+      display: none;
+    }
+    .ant-checkbox-wrapper {
+      font-size: 14px;
+    }
+    .project-disable-list {
+      li {
+        cursor: pointer;
+      }
+      .project-item {
+        line-height: 34px;
+        &.active {
+          background-color: $hongju-choosed-color;
+        }
+      }
+    }
+  }
+  //左侧
+  .project-left-btns {
+    margin-top: 10px;
+    display: flex;
+    justify-content: space-between;
+  }
+}

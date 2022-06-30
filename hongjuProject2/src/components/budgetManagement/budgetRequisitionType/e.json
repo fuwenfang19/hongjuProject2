@@ -1,0 +1,191 @@
+{
+    "id": 3,
+    "code": "BudgetApplication1",
+    "name": "预算编制申请单类型1",
+    "version": 1,
+    "kind": 1,
+    "isUsed": true,
+    "createTime": "2017-05-24T13:23:44.376339",
+    "budgetConfigPlans": [
+        {
+            "id": 4,
+            "code": "BP000004",
+            "name": "档案支出1",
+            "startDimensionRef": {
+                "id": 4,
+                "item_code": "dim_three",
+                "dimension": {
+                    "id": 2,
+                    "code": "DisburseClass",
+                    "name": "支出类型"
+                }
+            },
+            "startDimValue": 157,
+            "status": 0,
+            "creater": {
+                "id": 707,
+                "code": "0000043716",
+                "name": "王威"
+            },
+            "createTime": "2017-05-23"
+        }
+    ],
+    "headerDimensionRefs": [
+        {
+            "id": 3,
+            "budgetOrder": 1,
+            "dimensionRef": {
+                "id": 3,
+                "item_code": "dim_two",
+                "dimension": {
+                    "id": 1,
+                    "code": "Department",
+                    "name": "部门"
+                }
+            }
+        }
+    ],
+    "bodyDimensionRefs": [
+        {
+            "id": 3,
+            "budgetOrder": 1,
+            "dimensionRef": {
+                "id": 3,
+                "item_code": "dim_two",
+                "dimension": {
+                    "id": 1,
+                    "code": "Department",
+                    "name": "部门"
+                }
+            }
+        }
+    ],
+    "horizontalBody": [
+        {
+            "id": 3,
+            "showOrder": 1,
+            "dimensionRef": {
+                "id": 4,
+                "item_code": "dim_three",
+                "dimension": {
+                    "id": 2,
+                    "code": "DisburseClass",
+                    "name": "支出类型"
+                }
+            }
+        }
+    ],
+    "horizontalBodyValues": [
+        {
+            "id": 3,
+            "horizontalBody": 3,
+            "dimensionRef": {
+                "id": 4,
+                "item_code": "dim_three",
+                "dimension": {
+                    "id": 2,
+                    "code": "DisburseClass",
+                    "name": "支出类型"
+                }
+            },
+            "value": {
+                "name": "档案支出1",
+                "id": 157
+            }
+        },
+        {
+            "id": 3,
+            "horizontalBody": 3,
+            "dimensionRef": {
+                "id": 4,
+                "item_code": "dim_three",
+                "dimension": {
+                    "id": 2,
+                    "code": "DisburseClass",
+                    "name": "支出类型"
+                }
+            },
+            "value": {
+                "name": "档案支出22",
+                "id": 157
+            }
+        }
+    ],
+    "verticalBody": [
+        {
+            "id": 3,
+            "showOrder": 1,
+            "dimensionRef": {
+                "id": 1,
+                "item_code": "dim_one",
+                "dimension": {
+                    "id": 3,
+                    "code": "ExpenseItem",
+                    "name": "项目"
+                }
+            }
+        },
+         {
+            "id": 3,
+            "showOrder": 1,
+            "dimensionRef": {
+                "id": 1,
+                "item_code": "dim_one",
+                "dimension": {
+                    "id": 3,
+                    "code": "ExpenseItem",
+                    "name": "bum"
+                }
+            }
+        }
+    ],
+    "verticalBodyValues": [
+        {
+            "id": 3,
+            "verticalBody": 3,
+            "dimensionRef": {
+                "id": 1,
+                "item_code": "dim_one",
+                "dimension": {
+                    "id": 3,
+                    "code": "ExpenseItem",
+                    "name": "项目"
+                }
+            },
+            "value": {
+                "name": "需求调研",
+                "id": 7017
+            }
+        },
+         {
+            "id": 3,
+            "verticalBody": 3,
+            "dimensionRef": {
+                "id": 1,
+                "item_code": "dim_one",
+                "dimension": {
+                    "id": 3,
+                    "code": "ExpenseItem",
+                    "name": "项目"
+                }
+            },
+            "value": {
+                "name": "需求调研222",
+                "id": 7017
+            }
+        }
+    ],
+    "permissions": [
+        {
+            "id": 3,
+            "createTime": "2017-05-24",
+            "staffItem": {
+                "id": 707,
+                "code": "0000043716",
+                "name": "王威"
+            }
+        }
+    ],
+    "viewdefines": [],
+    "parent": "BudgetApplication"
+}

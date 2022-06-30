@@ -1,0 +1,192 @@
+.billingStyleBg, .billingStyleBg .hideEvent {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+}
+
+.billingStyleBg {
+  width: 100%;
+  height: 100%;
+  background: transparent;
+  z-index: 5;
+}
+
+.billingStyleBg .billingStyleSlideCon {
+  position: fixed;
+  top: 64px;
+  right: 0;
+  width: 400px;
+  height: 600px;
+  background-color: #fff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, .2);
+  overflow: hidden;
+  .ant-tabs-bar {
+    margin-bottom: 0;
+  }
+  .ant-tabs {
+    width: 400px;
+  }
+  .ant-tabs-tab {
+    font-size: 12px;
+  }
+}
+
+.billingStyleSlideBasicCon .new_Slide_head {
+  width: 100%;
+  height: 30px;
+  padding-left: 10px;
+  line-height: 30px;
+  border-bottom: 1px solid $hongju-hr-color;
+  .billingSettingLevel {
+    cursor: pointer;
+    color: $hongju-blue;
+  }
+  .billlingSettingcon {
+    display: inline-block;
+    width: 235px;
+    margin: 0 auto;
+    text-align: center;
+  }
+}
+
+.billingStyleSlideCon .new_Slide_head {
+  width: 100%;
+  height: 30px;
+  padding-left: 10px;
+  line-height: 30px;
+  border-bottom: 1px solid $hongju-hr-color;
+  .billlingSettingcon {
+    display: inline-block;
+    width: 335px;
+    margin: 0 auto;
+    text-align: center;
+  }
+}
+
+.new_Slide_head .hide_new_task {
+  float: right;
+  height: 30px;
+  line-height: 30px;
+  display: inline-block;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.billingStyleSlideBasicCon {
+  position: fixed;
+  top: 64px;
+  right: 0;
+  width: 290px;
+  height: 600px;
+  background-color: #fff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, .2);
+  overflow: hidden;
+}
+
+.basicBillingSettingArea {
+  .billingSettingConWrap {
+    position: absolute;
+    top: 38px;
+    bottom: 48px;
+    width: 100%;
+    overflow-y: auto;
+  }
+  .new_Slide_head {
+    width: 100%;
+    height: 30px;
+    padding-left: 10px;
+    line-height: 30px;
+    border-bottom: 1px solid $hongju-hr-color;
+    .billingSettingLevel {
+      cursor: pointer;
+      color: $hongju-blue;
+    }
+    .billlingSettingcon {
+      display: inline-block;
+      width: 235px;
+      margin: 0 auto;
+      text-align: center;
+    }
+  }
+  .billingSettingCon {
+    padding: 0 20px;
+    .settingSelectAll {
+      height: 30px;
+      line-height: 30px;
+      width: 250px;
+      background-color: dodgerblue;
+      border: 1px solid dodgerblue;
+      border-radius: 4px;
+      color: #fff;
+    }
+    li {
+      height: 60px;
+      width: 250px;
+      border: 1px solid $hongju-border-color;
+      border-radius: 4px;
+      margin-bottom: 10px;
+      .billingSettingConliCheckbox {
+        margin: 4px 10px 0 10px;
+        float: left;
+      }
+      .billingSettingConli {
+        width: 200px;
+        float: left;
+        span {
+          display: inline-block;
+          width: 200px;
+          height: 26px;
+          line-height: 26px;
+        }
+        .remark {
+          font-size: 10px;
+          color: #ccc
+
+        }
+      }
+    }
+    .highBillBtnSlideLi {
+      height: 40px;
+      line-height: 40px;
+    }
+    .billingSettingConCheckbox {
+      margin: 0 10px;
+    }
+  }
+  .billingSettingCoImg {
+    float: right;
+    .anticon-exclamation-circle-o {
+      line-height: 60px;
+      color: $hongju-blue;
+      cursor: pointer
+    }
+  }
+
+}
+
+.ant-tabs-content .basicBillingSettingArea .billingSettingCon li {
+  width: 360px;
+}
+
+.highBillingSettingArea {
+  .billingSettingCon {
+    padding: 0
+  }
+}
+
+.basicShowImgModal {
+  .ant-modal-header {
+    display: none
+  }
+  .ant-modal-footer {
+    display: none
+  }
+  .ant-modal-body {
+    padding: 0
+  }
+  .ant-modal-close {
+    display: none
+  }
+}

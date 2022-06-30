@@ -1,0 +1,301 @@
+.budget-requisition-type {
+    .list-box {
+        display: flex;
+        flex-direction: column;
+    }
+    .list-bottom {
+        overflow: auto;
+        flex: 1;
+        padding-bottom: 40px;
+        padding-top: 10px;
+    }
+    .list-bottom-item {
+        cursor: pointer;
+        line-height: 20px;
+        padding: 5px 5px;
+    }
+    .list-bottom-item-choosed {
+        background: #e5e5e5;
+    }
+    .new-requisition {
+        cursor: pointer;
+        border: 1px solid #e5e5e5;
+        border-radius: 4px;
+        height: 28px;
+        line-height: 28px;
+        margin-bottom: 10px;
+        padding-left: 56px;
+        span {
+            margin-left: 5px;
+        }
+    }
+    .new-requisition:hover {
+        color: $hongju-blue;
+        border: 1px solid $hongju-blue;
+    }
+    .stoped-requisition {
+        height: 28px;
+        line-height: 28px;
+        user-select: none;
+    }
+    .edit-name {
+        i {
+            color: $hongju-blue;
+            cursor: pointer;
+            display: inline-block;
+            white-space: nowrap;
+            overflow: hidden;
+            padding: 0 3px;
+        }
+        .edit-name-span {
+            display: inline-block;
+            width: 200px;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+        }
+        .ant-input {
+            width: 200px;
+        }
+    }
+    .budget-operator-item-check {
+        display: inline-block;
+        cursor: default;
+        padding: 0 3px;
+        cursor: default;
+    }
+    .budget-operator-item {
+        display: inline-block;
+        margin-left: 10px;
+    }
+    .content-right-head-margin {
+        margin-bottom: 10px!important;
+    }
+    .box-item {
+        border: 1px solid #ccc;
+        margin-bottom: 10px;
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+    .content-item {
+        float: left;
+        padding: 5px 5px;
+    }
+    .content-item-title {
+        display: inline-block;
+        width: 100px;
+    }
+    .content-item-select {
+        width: 200px;
+        margin-right: 10px;
+        display: inline-block;
+    }
+    .content-item-operator {
+        float: left;
+        width: 100%;
+        padding: 5px 5px;
+        span {
+            float: right;
+            padding: 5px 10px;
+            color: $hongju-blue;
+            cursor: pointer;
+        }
+    }
+    .budget-edit-table-box {
+        position: relative;
+    }
+    .budget-edit-table {
+        border: 1px solid #ccc;
+        display: inline-block;
+        width: 450px;
+        padding-left: 20px;
+        padding-right: 20px;
+        background: #fff;
+        .ok {
+            span {
+                float: right;
+                padding: 5px 5px;
+                color: $hongju-blue;
+                cursor: pointer;
+            }
+        }
+        .title {
+            text-align: center;
+            line-height: 30px;
+            height: 30px;
+        }
+        .content {}
+        .content-th {
+            height: 30px;
+            line-height: 30px;
+            margin-bottom: 5px;
+            i {
+                display: inline-block;
+            }
+            span {
+                display: inline-block;
+                width: 60px;
+            }
+            .budget-position {
+                display: inline-block;
+            }
+            .budget-reference {
+                display: inline-block;
+            }
+        }
+        .card-box {
+            height: 30px;
+            line-height: 30px;
+            border: 1px solid #ccc;
+            margin-bottom: 10px;
+            background: #fff;
+            cursor: move;
+            box-sizing: border-box;
+        }
+        .card-title {
+            height: 100%;
+            display: inline-block;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+        }
+        .card-checkbox {
+            height: 100%;
+            display: inline-block;
+            text-align: center;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+            span {
+                display: inline-block;
+            }
+        }
+        .card-dele {
+            cursor: pointer;
+            height: 100%;
+            font-size: 16px;
+            padding: 0 5px;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+            display: inline-block;
+        }
+    }
+    .budget-edit-table-add-field {
+        position: absolute;
+        right: 0;
+        top: 0;
+        width: 300px;
+        display: inline-block;
+    }
+    .slide-box {
+        width: 100%;
+        height: 560px;
+        border: 1px solid #ccc;
+        padding-left: 20px;
+        padding-right: 20px;
+        padding-bottom: 20px;
+        .title {
+            text-align: center;
+            height: 30px;
+            line-height: 30px;
+        }
+        .field-item-title {
+            background: #e5e5e5;
+            padding: 0 10px;
+            margin-bottom: 10px;
+        }
+        .field-item {
+            border: 1px solid #ccc;
+            padding: 0 10px;
+            margin-bottom: 10px;
+        }
+        .ckeck-item {
+            width: 100%;
+            height: 30px;
+            line-height: 30px;
+            span {
+                display: inline-block;
+            }
+        }
+        .field-tips {
+            height: 25px;
+            line-height: 25px;
+            color: #ccc;
+        }
+    }
+}
+
+.budget-table {
+    .ant-table-tbody {
+        td {
+            color: #fff;
+        }
+    }
+}
+
+//新增预算申请单类型  modal所有样式需要写在这里
+.new-requisition-box {
+    font-size: 14px;
+    padding: 0 15px;
+    .new-requisition-title {
+        color: $hongju-introduce-color;
+        height: 14px;
+        margin-bottom: 19px;
+    }
+    .template-item {
+        padding: 0 20px;
+    }
+    .template-item-title {
+        i {
+            display: inline-block;
+            width: 28px;
+            height: 28px;
+            line-height: 28px;
+            text-align: center;
+            background-color: #e5e5e5;
+            border-radius: 14px;
+            margin-right: 28px;
+        }
+        span {
+            display: inline-block;
+            height: 28px;
+            line-height: 28px;
+        }
+    }
+    .template-item-detail {
+        padding: 0 58px;
+        position: relative;
+        .icon-t {
+            color: $hongju-blue;
+            font-size: 16px;
+            position: absolute;
+            left: 58px;
+            top: 0;
+            cursor: pointer;
+        }
+        .icon-normal {
+            font-size: 16px;
+            position: absolute;
+            left: 58px;
+            top: 0;
+            width: 16px;
+            height: 16px;
+            border-radius: 8px;
+            border: 2px solid #bbb;
+            cursor: pointer;
+        }
+        .template-item-detail-unchoosed {
+            background: #e5e5e5;
+            display: block;
+            margin-left: 32px;
+            width: 130px;
+            height: 50px;
+            cursor: pointer;
+        }
+        .template-item-detail-choosed {
+            display: block;
+            margin-left: 32px;
+        }
+    }
+}

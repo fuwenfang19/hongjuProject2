@@ -1,0 +1,124 @@
+.company-root {
+    padding-left: 10px;
+}
+
+.company-content {
+    padding-bottom: 55px;
+}
+
+.company-name {
+    margin-left: -10px;
+    font-size: 14px;
+    cursor: pointer;
+    user-select: none;
+    padding: 5px;
+}
+
+.company-name-active {
+    background: #e5e5e5;
+}
+
+.lazy-tree-node {
+    position: relative;
+    user-select: none;
+}
+
+.child-nodes {
+    margin-left: 25px;
+}
+
+// 图标
+.tree-icon {
+    position: absolute;
+    top: 8px;
+    width: 13px;
+    height: 13px;
+    display: inline-block;
+}
+
+.tree-title {
+    margin-left: 23px;
+    margin-right: 10px;
+    width: 150px;
+    line-height: 34px;
+    display: inline-block;
+    word-wrap: break-word;
+    font-size: 14px;
+}
+
+// 树节点是否被选中
+.tree-selected span {
+    background: #e5e5e5;
+}
+
+.tree-title span {
+    display: inline-block;
+    cursor: pointer;
+    padding: 0 6px;
+    border-radius: 2px;
+}
+
+// 有子节点的开关
+.tree-switch {
+    position: absolute;
+    top: 3px;
+    width: 200px;
+    padding-left: 178px;
+    height: 32px;
+    line-height: 22px;
+    display: inline-block;
+    text-align: center;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    i {
+        cursor: pointer;
+    }
+    .anticon-caret-down {
+        font-size: 12px;
+    }
+}
+
+.state-tree-switch {
+    left: -180px;
+    margin-top: -2px;
+    cursor: pointer;
+}
+.no-childe-span{
+    cursor:default;
+}
+
+.tree-switch-off {
+    //别删
+    font-size: 12px;
+}
+
+.tree-switch-open {
+    //别删
+    font-size: 12px;
+}
+
+// 加载更多节点
+.lazy-tree-more {
+    cursor: pointer;
+    color: #948aec;
+    display: inline-block;
+    height: 25px;
+    line-height: 15px;
+    font-size: 16px;
+    width: 20px;
+    text-align: center;
+}
+
+.lazy-tree-more:hover {
+    background: #f6f6f6;
+}
+
+.tree-switch .node-leaf {
+    cursor: default;
+}
+.tree-selected-bg span{
+    background: #fff;
+}
+.company-name-bg{
+    background: #fff;
+}

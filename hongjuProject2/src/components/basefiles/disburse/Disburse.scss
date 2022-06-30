@@ -1,0 +1,31 @@
+.disburse-page {
+  //左侧
+  .disburse-left-btns {
+    margin-top: 10px;
+    display: flex;
+    justify-content: space-between;
+  }
+  .company-name {
+    display: none;
+  }
+  .ant-form-item-label{
+    overflow:initial !important;
+  }
+  .disburse-wraper {
+    width: 240px;
+    overflow: auto !important;
+    margin: 5px -5px;
+    .disburse-item {
+      padding: 0 10px;
+      line-height: 34px;
+      cursor: pointer;
+    }
+
+    //.supplier-item:hover {
+    //  color:#108ee9;
+    //}
+    .currentDisburse {
+      background: #f6f6f6;
+    }
+  }
+}

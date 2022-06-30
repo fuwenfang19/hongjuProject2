@@ -1,0 +1,129 @@
+.billingStyleSlideHighCon{
+    position: fixed;
+    top: 64px;
+    right: 0;
+    width: 400px;
+    height: 600px;
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0,0,0,.2);
+    overflow: hidden;
+    .ant-select-selection{
+        border:0;
+    }
+    .new_Slide_head{
+        width: 100%;
+        height: 30px;
+        padding-left: 10px;
+        line-height: 30px;
+        border-bottom:1px solid $hongju-hr-color;
+        .billingSettingLevel{
+            cursor: pointer;
+            color:$hongju-blue;
+        }
+        .billlingSettingcon{
+            display: inline-block;
+            width:345px;
+            margin:0 auto;
+            text-align: center;
+        }
+    }
+}
+.highBillingSettingArea{
+    padding:0 10px;
+    .highBillingSettingInfo{
+        height:50px;
+        padding-left:24px;
+        padding-top:10px;
+        span{
+            float: left;
+            line-height:30px;
+        }
+    }
+    .ant-select-selection{
+        border:0;
+    }
+    .billingSettingConWrap{
+        position: absolute;
+        top: 60px;
+        bottom: 50px;
+        overflow-y: auto;
+        .billingSettingCon{
+            .settingSelectAll{
+                height:30px;
+                line-height: 30px;
+                width:380px;
+                background-color:dodgerblue;
+                border:1px solid dodgerblue;
+                border-radius:4px;
+                color:#fff;
+            }
+            li{
+                height:35px;
+                line-height: 35px;
+                width:386px;
+                border: 1px solid $hongju-border-color;
+                border-radius:4px;
+                margin-bottom:10px;
+                .billingSettingConliCheckbox{
+                    margin:0 7px;
+                    float: left;
+                }
+                .billingHighSettingSpan{
+                    float: left;
+                }
+            }
+            .billingSettingConCheckbox{
+                margin:0 7px;
+            }
+        }
+    }
+    .list-item{
+        min-height:50px !important;
+    }
+}
+
+.billSetting-page{
+    .basicArea {
+      .billingConWrap{
+        width: 100%;
+        overflow-y: auto;
+      }
+    }
+    .appReportSlide{
+        .list-item{
+            min-height:50px !important;
+        }
+    }
+    .chargeTypeSlide{
+        .list-item{
+            min-height:50px !important;
+        }
+    }
+    .billingHighConWrap{
+        overflow-y: auto
+    }
+    .highBillingSettingArea{
+        padding:0;
+    .highBillingSettingInfo{
+      padding-left:54px;
+      color:#c6c6c6;
+
+    }
+  }
+  .choose-side-slip .slip-real-container .billingHighConWrap .list-container {
+    //padding-top: 0px;
+  }
+  .ant-select-selection__rendered{
+    margin-right:0;
+  }
+  .ant-select-arrow{
+    right:-2px;
+  }
+  .ant-tabs-bar{
+    margin-bottom:0;
+  }
+  .ant-tabs-nav{
+    font-size: 12px;
+  }
+}
+    

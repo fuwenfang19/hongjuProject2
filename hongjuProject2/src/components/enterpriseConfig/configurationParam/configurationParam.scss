@@ -1,0 +1,40 @@
+.ConfigurationParam-page{
+  .content-right{
+    padding: 0;
+    margin: 0;
+    .content-right-head{
+      height: 56px;
+      line-height: 56px;
+      .head-left {
+        font-size: 16px;
+        font-weight: bolder;
+        line-height:56px;
+        text-indent: 19px;
+        }
+    }
+    .single-line{
+      margin: 0px;
+    }
+    .ConfigurationParam-body{
+      .ConfigurationParam-card{
+        background:#ffffff;
+        box-shadow:0px 6px 15px 0px #c6c6c6;
+        border-radius:3px;
+        width:520px;
+        height:190px;
+        margin-left: 24px;
+        margin-top: 42px;
+        padding: 45px 0px 0px 31px;
+        .gutter-box{
+          margin-bottom: 14px;
+        }
+        .ant-select-selection{
+          //border:0;
+        }
+        .info-value{
+          max-width:400px;
+        }
+      }
+    }
+  }
+}

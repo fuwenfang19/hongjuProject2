@@ -1,0 +1,85 @@
+/*
+*create by yangyfe in 2017.2.21
+**/
+
+.customFile-page {
+  height: 100%;
+  display: flex;
+  .gutter-row {
+    overflow: hidden;
+    background: #fff;
+    line-height: 44px;
+    padding-left: 14px;
+
+    width: 30%;
+    align-self: stretch;
+    margin-right: 10px;
+  }
+  .content-left {
+    background: #ffffff;
+    overflow: hidden;
+    margin-right: 10px;
+    padding: 0;
+    .addButton, .content-left-custom {
+      width: 100%;
+      height: 60px;
+      //line-height: 60px;
+      border: none;
+      .add-input{
+        width: 16px;
+        height: 16px;
+        border:none;
+        outline: none;
+        cursor: pointer;
+        background: url('images/billSetting/add.png') no-repeat center center;
+        background-size: contain;
+      }
+    }
+    .addButton {
+      i{
+        font-size: 20px;
+      }
+      filter: chroma(color=#000000);
+      outline: none;
+      border: none;
+      line-height: 60px;
+      text-align: left;
+      background: #ffffff;
+      .addButton-icon {
+        color: #cccccc;
+        margin: 20px 30px 18px 30px;
+        float: left;
+      }
+    }
+    .back{
+      background: #e5e5e5;
+    }
+     //.addButton:hover {
+     // background: #e5e5e5;
+     //}
+    .content-left-custom {
+      font-size: 16px;
+      //line-height: 60px;
+      text-indent: 30px;
+    }
+    .custom-button {
+      height: 90%;
+      overflow-y: auto;
+      cursor: pointer;
+    }
+  }
+  .ant-input-preSuffix-wrapper {
+    position: relative;
+    display: inline-block;
+    margin: 2%;
+  }
+  .company-root {
+    overflow: auto;
+  }
+  .content-right {
+    flex: 1;
+    overflow: hidden;
+    background: #ffffff;
+    padding: 0;
+  }
+}

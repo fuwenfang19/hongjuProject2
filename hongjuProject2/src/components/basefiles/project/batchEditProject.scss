@@ -1,0 +1,31 @@
+.project-page {
+
+}
+
+.batch-edit-project {
+  .ant-modal-body {
+    height: 65vh;
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+  .ant-modal-content {
+    width: 700px;
+  }
+  .ant-form-item-control {
+    line-height: normal;
+  }
+  .batch-edit-row {
+    text-align: center;
+    p {
+      font-size: 14px;
+      color: $hongju-tip-color;
+      font-weight: normal;
+      border-bottom: solid 1px $hongju-border-color;
+      padding: 6px 6px 14px 6px;
+      margin-bottom: 10px;
+    }
+    p.edit-value{
+      margin-top: 20px;
+    }
+  }
+}

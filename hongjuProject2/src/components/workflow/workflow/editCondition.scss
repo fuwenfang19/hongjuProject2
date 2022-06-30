@@ -1,0 +1,210 @@
+.edit-workflow-condition {
+  .ant-collapse-content {
+    height: 200px;
+    overflow-y: auto;
+  }
+  .ant-collapse-content-active {
+    height: 88% !important;
+    padding-right: 0;
+  }
+  .ant-modal-close {
+    display: none;
+  }
+  &.ant-popover {
+
+  }
+  .anticon-delete {
+    font-size: 16px !important;
+  }
+  .ant-select {
+    width: 90px !important;
+  }
+  .common-choose-box {
+    width: 480px;
+    //width: 90%;
+    .common-choose-input-box {
+      border-radius: 3px;
+    }
+  }
+  .ant-input, .ant-input-number {
+    width: 480px;
+  }
+
+  .ant-select {
+    height: 100%;
+  }
+
+  .advance-ul li {
+    line-height: 30px;
+  }
+
+  .step-del-btn {
+    color: red;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 8px;
+    padding-right: 20px;
+    i {
+      font-size: 16px;
+    }
+  }
+  //.ant-row {
+  //  height: 30px;
+  //}
+  .col-label {
+    min-height: 32px;
+    line-height: 32px;
+  }
+  .col-value {
+    min-height: 32px;
+    line-height: 32px;
+  }
+  //.ant-col-24.item-container {
+  //  height: 60px;
+  //}
+  .ant-modal {
+    width: 800px !important;
+  }
+  .ant-modal-body {
+    min-height: 380px;
+    height: 65vh;
+    overflow: hidden;
+  }
+  .condition-edit-items {
+    display: flex;
+    flex-flow: row;
+    justify-content: space-between;
+    line-height: normal;
+  }
+  .condition-del-btn {
+    height: 30px;
+    line-height: 30px;
+    color: red;
+    font-size: 14px;
+    padding-left: 6px;
+    display: none;
+  }
+
+  .ant-collapse-header {
+    height: auto !important;
+  }
+  .condition-modal-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    .condition-ul {
+      display: flex;
+      min-width: 500px;
+      li {
+
+      }
+    }
+    .advance {
+      display: inline-block;
+      min-width: 70px;
+      color: $hongju-blue;
+      cursor: pointer;
+    }
+    .title-label {
+      min-width: 80px;
+    }
+  }
+  .item-container {
+    padding-bottom: 5px;
+    &:hover {
+      .condition-del-btn {
+        display: block;
+        cursor: pointer;
+      }
+    }
+  }
+  .ant-modal-content {
+    min-width: 900px;
+    min-height: 500px;
+    width: 100% !important;
+  }
+
+  .condition-name {
+    //inline元素设置宽度无效 所以修改为inline-block;
+    display: inline-block;
+    max-width: 100%; //120px
+    overflow: hidden;
+    //vertical-align的默认值是baseline 'inline-block'（盒）的基线是它的最后一个常规流中的行盒的基线，
+    //除非它没有流内行盒或者它的'overflow'属性的计算值不为'visible'，此时基线是bottom margin边
+    vertical-align: middle;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+
+  .expense-rule-name {
+    padding-left: 6px;
+    padding-right: 2px;
+  }
+  .expense-rule-select {
+    width: 140px !important;
+  }
+
+  .ant-collapse-item {
+    background: $hongju-gray-background;
+    border-radius: 4px;
+    margin-bottom: 6px;
+    border: 0;
+  }
+  .ant-collapse-item.mock {
+    min-height: 38px;
+    line-height: 32px;
+    padding-left: 20px;
+    ul {
+      li {
+        padding-top: 4px;
+        padding-bottom: 4px;
+        margin-right: 20px;
+      }
+    }
+  }
+}
+
+.edit-workflow-condition-modal {
+  .ant-modal-footer {
+    display: none;
+  }
+  .ant-modal-body {
+    min-height: 450px;
+    height: 70vh;
+  }
+  .ant-tabs {
+    width: 100%;
+  }
+  .ant-tabs-nav.ant-tabs-nav-animated {
+    text-align: center;
+    float: none;
+  }
+  .ant-tabs-bar {
+    border-bottom: 0;
+  }
+
+  .add-condition-dropdown-container {
+    display: inline-block;
+    position: relative;
+    width: 100%;
+
+    .add-condition-dropdown-list {
+      background-color: #fff;
+      border: none;
+      padding: 0 20px !important;
+      overflow: auto;
+      z-index: 100;
+      @include slip-list-container();
+      .slip-real-container {
+        height: 370px;
+      }
+    }
+    li.list-item {
+      min-height: 0 !important;
+    }
+    li.list-item:hover {
+      border-color: $hongju-blue;
+    }
+  }
+}

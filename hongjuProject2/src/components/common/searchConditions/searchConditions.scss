@@ -1,0 +1,52 @@
+.page {
+  .search-conditions-container {
+    padding-top: 10px;
+    padding-right: 10px;
+    [class^="ant-col-"] {
+      margin-bottom: 6px;
+      height: auto;
+    }
+    .checkbox-group-col{
+
+    }
+    .ant-checkbox-group{
+      white-space: nowrap;
+      position: relative;
+      top: 3px;
+    }
+
+    .ant-col-24.btns {
+      height: 28px;
+      text-align: right;
+    }
+    .ant-btn {
+      position: relative;
+      top: -5px;
+      height: 30px !important;
+      &.search {
+        background-color: $hongju-search;
+        width: 110px;
+      }
+      &.clear {
+        min-width: 60px !important;
+        max-width: 60px;
+        background-color: $hongju-clear;
+        margin: 0;
+        padding: 0;
+      }
+      &.collapse {
+        background-color: $hongju-high;
+        margin: 0;
+      }
+    }
+
+    .ant-input-number, .ant-calendar-picker {
+      width: 100%;
+    }
+    .ant-checkbox-group-item.ant-checkbox-wrapper {
+      span {
+        padding: 0 0 0 2px;
+      }
+    }
+  }
+}

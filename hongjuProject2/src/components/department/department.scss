@@ -1,0 +1,74 @@
+/*
+*create by yangyfe in 2017.2.21
+**/
+
+.department-page {
+  height: 100%;
+  display: flex;
+  .department-wraper {
+    width: 240px;
+    overflow: auto !important;
+    margin: 5px -5px;
+    .department-item {
+      padding: 0 10px;
+      line-height: 34px;
+      cursor: pointer;
+    }
+    .currentDepartment {
+      background: #f6f6f6;
+    }
+  }
+  .dept-left {
+    background: #ffffff;
+    padding: 5px;
+
+  }
+  .dept-left {
+    width: 240px;
+    margin-right: 10px;
+  }
+  .ant-input-preSuffix-wrapper {
+    position: relative;
+    display: inline-block;
+  }
+  .ant-btn {
+    margin: 2%;
+    &:first-child {
+      margin-left: 0;
+    }
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+  .project-left-btns {
+    margin-top: 6px;
+    display: flex;
+    justify-content: space-between;
+  }
+  .dept-right {
+    flex: 1;
+    overflow: hidden;
+    background: #ffffff;
+
+  }
+  .content-left {
+    overflow: hidden;
+    .company-name {
+      //display: none;
+    }
+  }
+  .company-root {
+    padding-left: 10px;
+  }
+  .content-right {
+    overflow: hidden;
+  }
+}
+
+
+
+
+
+
+
+

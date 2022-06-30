@@ -1,0 +1,797 @@
+body,
+ol,
+ul,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+th,
+td,
+dl,
+dd,
+form,
+fieldset,
+legend,
+input,
+textarea,
+select {
+  margin: 0;
+  padding: 0
+}
+
+body {
+  font: 14px -apple-system, "Microsoft YaHei", BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Helvetica, "PingFang SC", "Hiragino Sans GB", SimSun, sans-serif !important;
+  color: #333;
+  background: #fff;
+  -webkit-text-size-adjust: 100%;
+}
+
+a {
+  color: #2d374b;
+  text-decoration: none
+}
+
+a:hover {
+  text-decoration: none
+}
+
+em {
+  font-style: normal
+}
+
+li {
+  list-style: none
+}
+
+img {
+  border: 0;
+  vertical-align: middle
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0
+}
+
+p {
+  word-wrap: break-word
+}
+
+i {
+  font-style: normal;
+}
+
+b {
+  font-weight: normal;
+}
+
+//边框等的蓝色
+$hongju-blue: #449ff7;
+//横线的颜色 - 分割线
+$hongju-hr-color: #e5e5e5;
+//边框颜色
+$hongju-border-color: #eee;
+//灰色背景
+$hongju-gray-background: #f7f7f7;
+//白色背景
+$hongju-background-color: #fff;
+//文字label
+$hongju-label-color: #999;
+$hongju-tip-color: #999;
+//提示文字
+$hongju-introduce-color: #c6c6c6;
+//选中色
+$hongju-choosed-color: #f6f6f6;
+//primary success info warning error
+$hongju-primary: $hongju-blue;
+$hongju-success: $hongju-blue;
+$hongju-info: green;
+$hongju-waring: #ffbf00;
+$hongju-error: #ed7140;
+//橘黄色
+$hongju-color: #f36f46;
+//logo颜色
+$hongju-logo: #383952;
+
+//搜索按钮
+$hongju-search: #ffd400;
+//清空按钮
+$hongju-clear: #D8D8D8;
+//高级按钮
+$hongju-high: #faad94;
+
+//媒体查询范围
+$small-devices: 992px;
+$medium-devices: 1200px;
+$large-devices: 1440px;
+$super-large-devices: 1660px;
+@keyframes loadingChange {
+  0% {
+    transform: rotate(0deg);
+  }
+  50% {
+    transform: rotate(180deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@mixin hongju-btn($type:"primary") {
+  $bgColor: $hongju-primary;
+  @if $type=='success' {
+    $bgColor: $hongju-success;
+  } @else if $type=='info' {
+    $bgColor: $hongju-info;
+  } @else if $type=='warning' {
+    $bgColor: $hongju-waring;
+  } @else if $type=='error' {
+    $bgColor: $hongju-error;
+  }
+  min-width: 86px;
+  height: 32px;
+  background: $bgColor;
+  margin: 6px;
+  outline: none;
+  border: none;
+  color: #ffffff;
+  border-radius: 2px;
+  &[disabled] {
+    //color: rgba(0, 0, 0, 0.25);
+    //background-color: #f7f7f7;
+    //border-color: #d9d9d9;
+    background-color: rgba(68, 159, 247, 0.5);
+    border: 0;
+    color: #d0e7fd;
+  }
+}
+
+@mixin normal-slip-head() {
+  display: flex;
+  justify-content: space-between;
+  padding: 14px 0;
+  margin: 0 14px;
+  font-size: 14px;
+  border-bottom: solid 1px $hongju-hr-color;
+  .level-text {
+    color: $hongju-blue;
+    cursor: pointer;
+  }
+  .title {
+    font-weight: bolder;
+    cursor: default;
+  }
+  .close-icon {
+    font-size: 16px;
+    cursor: pointer;
+    color: #999;
+  }
+}
+
+@mixin slip-list-container() {
+  //可选择列表
+  padding: 13px 20px 20px;
+  overflow-y: auto;
+  .list-choose-all {
+    height: 44px;
+    line-height: 24px;
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    background-color: $hongju-blue;
+    border: 1px solid $hongju-blue;
+    background: #449ff7;
+    box-shadow: 0px 1px 4px 0px #d8d8d8;
+    border-radius: 6px;
+    height: 50px;
+    //font-size:16px;
+    color: #fff;
+    .check-all {
+      margin-right: 20px;
+    }
+    .spec {
+      cursor: pointer;
+    }
+  }
+  .list-item {
+    //height: 64px;
+    line-height: 24px;
+    width: 100%;
+    border: 1px solid $hongju-border-color;
+    margin-bottom: 17px;
+    padding: 10px;
+    display: flex;
+    background: #ffffff;
+    box-shadow: 0px 1px 4px 0px #d8d8d8;
+    border-radius: 6px;
+    min-height: 75px;
+    //justify-content: space-between;
+    justify-content: flex-start;
+    .item-checkbox {
+      margin-right: 20px;
+    }
+    .item-icon {
+      font-size: 14px;
+      color: $hongju-blue;
+      cursor: pointer;
+    }
+    .item-content {
+      flex: 1;
+    }
+    .item-title {
+      min-width: 270px;
+      text-align: left;
+      cursor: default;
+    }
+    .item-remark {
+      min-width: 270px;
+      color: #999;
+      cursor: default;
+      font-size: 13px;
+      display: flex;
+      justify-content: flex-start;
+    }
+  }
+}
+
+//antd 相关修改 modal样式修改
+.ant-modal {
+  top: 64px;
+  .ant-modal-content {
+    .ant-modal-header {
+      text-align: center;
+    }
+    .ant-modal-footer {
+      text-align: center;
+      border: none;
+      padding-bottom: 30px;
+      .ant-btn {
+        width: 96px;
+        //让btn变小
+        font-size: 12px;
+        font-weight: normal !important;
+        margin-right: 16px;
+        &.ant-btn-primary {
+          background-color: $hongju-color;
+          border-color: $hongju-color;
+        }
+      }
+    }
+  }
+}
+
+.ant-select-dropdown {
+  min-width: 100px;
+}
+
+.ant-btn {
+  font-weight: normal !important;
+}
+
+//DropdownList下拉框样式调整
+.ant-dropdown {
+  max-width: 220px !important;
+  max-height: 300px !important;
+  min-width: 160px;
+  //min-height: 200px;
+  overflow-y: auto;
+  border: 1px solid #e5e5e5;
+  background: #fff;
+  padding-bottom: 10px;
+}
+
+.ant-dropdown-menu-item, .ant-dropdown-menu-submenu-title {
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+.ant-dropdown-menu {
+  box-shadow: none;
+}
+
+.ant-switch {
+  width: 42px;
+  height: 21px;
+}
+
+.ant-switch:after {
+  width: 17px;
+  height: 17px;
+}
+
+.ant-switch-checked {
+  border-color: $hongju-primary;
+  background-color: $hongju-primary;
+  //border-color: #666;
+  //background-color: #666;
+}
+
+.ant-switch-checked:after {
+  margin-left: -18px;
+}
+
+.ant-select-dropdown-menu {
+  padding: 15px 0;
+}
+
+.ant-select-dropdown-menu-item:hover, .ant-select-dropdown-menu-item-active {
+  background: #f3f3f3;
+}
+
+.ant-form-item-required:before {
+  content: '';
+  margin-right: 0px;
+}
+
+.ant-form-item-label {
+  text-align: left;
+  text-indent: 12px;
+}
+
+.ant-form-item-label label:after {
+  content: '';
+  margin: 0 8px 0 2px;
+  position: relative;
+  top: -5px;
+  right: 12px;
+}
+
+.ant-form-item-required:after {
+  display: inline-block;
+  margin-right: 4px;
+  content: "*" !important;
+  font-family: "微软雅黑";
+  line-height: 1;
+  font-size: 12px;
+  color: #f04134;
+}
+
+.ant-table table {
+  overflow: visible;
+}
+
+.ant-input {
+  border: 1px solid #d8d8d8;
+}
+
+.ant-input[disabled] {
+  background-color: #e2e2e2;
+}
+
+.ant-radio-wrapper {
+  color: #666;
+  font-size: 14px;
+}
+
+.ant-menu span {
+  font-size: 14px !important;
+}
+
+.ant-table-content {
+  font-size: 14px !important;
+}
+
+.ant-btn span {
+  font-size: 14px !important;
+}
+
+.ant-timeline-item-content {
+  padding: 0;
+  margin: 0 0 10px 20px;
+  font-size: 14px;
+}
+
+.ant-collapse-item {
+  font-size: 14px;
+}
+
+.ant-modal-body {
+  font-size: 14px;
+}
+
+.ant-modal-title, .ant-confirm-title {
+  font-size: 16px;
+}
+
+//页面布局
+.page {
+  height: 100%;
+  display: flex;
+  //左右布局 如果不是左右布局 直接写content-right
+  .content-left {
+    background: #fff;
+    padding: 5px 5px 5px 5px;
+    overflow: auto;
+    align-self: stretch;
+    margin-right: 10px;
+    min-width: 260px;
+
+    @media only screen and (min-width: $small-devices) {
+      width: 260 * 0.7px;
+    }
+    @media only screen and (min-width: $medium-devices) {
+      width: 260 * 0.8px;
+    }
+    @media only screen and (min-width: $large-devices) {
+      width: 280px;
+    }
+
+  }
+  .content-right {
+    background: #fff;
+    padding: 5px;
+    flex: 1;
+    overflow-x: hidden;
+    //content-right-head是“下载模板、导入数据、更多”公共样式
+    .content-right-head {
+      &.editing { //直接在head-left 和 head-right中写<Button type="primary">test</Button> 即可
+        background-color: $hongju-blue;
+        border: none;
+        .head-left {
+          padding-left: 8px;
+          padding-right: 8px;
+          line-height: 50px;
+          .ant-btn {
+            padding-left: 0;
+            margin-left: 0;
+            text-align: left;
+          }
+        }
+      }
+      height: 50px;
+      line-height: 50px;
+      display: flex;
+      justify-content: space-between;
+      border-bottom: solid 1px $hongju-hr-color;
+      margin-bottom: 0;
+      .head-left {
+        margin-left: 8px;
+        font-size: 14px;
+        font-weight: bolder;
+        line-height: 49px;
+
+        .billName {
+          display: inline-block;
+          width: 150px;
+          text-overflow: ellipsis;
+          overflow: hidden;
+          white-space: nowrap;
+        }
+        .ant-btn-primary {
+          @include hongju-btn();
+        }
+      }
+      .head-right {
+        .ant-switch {
+          margin: 6px;
+        }
+        .ant-switch-checked {
+          border-color: $hongju-primary;
+          background-color: $hongju-primary;
+          //border-color: #666;
+          //background-color: #666;
+        }
+        .ant-btn-primary,
+        .ant-dropdown-link,
+        .ant-dropdown-trigger {
+          @include hongju-btn();
+        }
+        .ant-btn-default {
+          width: 80px;
+          height: 32px;
+          margin: 6px;
+          background: #fff;
+          border-radius: 0;
+          outline: none;
+          border: 1px solid $hongju-blue;
+          color: $hongju-blue;
+        }
+      }
+    }
+    .ant-btn-primary {
+      @include hongju-btn();
+    }
+  }
+  //信息展示 左边label 右边value 参见common组件下的renderLabelAndValues.js
+  @mixin info-class() {
+    margin: 0;
+    display: inline-block;
+  }
+  .info-label {
+    padding: 4px 0 4px 8px;
+    color: #999;
+    @include info-class();
+  }
+  .info-value {
+    color: #333;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    max-width: 70px;
+
+    @media only screen and (min-width: $small-devices) {
+      max-width: 100px;
+    }
+    @media only screen and (min-width: $medium-devices) {
+      max-width: 102px;
+    }
+    @media only screen and (min-width: $large-devices) {
+      max-width: 160px;
+    }
+    @media only screen and (min-width: $super-large-devices) {
+      max-width: 220px;
+    }
+    vertical-align: middle;
+    @include info-class();
+    margin-left: 6px;
+  }
+  div.single-line {
+    height: 1px;
+    border-bottom: solid 1px $hongju-hr-color;
+    margin: 6px 0;
+  }
+  //右侧侧滑选择样式 参见templates下的 sideslip.js
+  .choose-side-slip {
+    position: fixed;
+    top: 0;
+    left: 0;
+    background: transparent;
+    width: 100%;
+    height: 100%;
+    font-family: PingFangSC-Regular;
+    font-size: 14px;
+    //背景事件
+    .hide-event-wrap {
+      position: fixed;
+      top: 0;
+      left: 0;
+      height: 100%;
+      width: 100%;
+    }
+    //容器
+    .slip-real-container {
+      position: fixed;
+      top: 64px;
+      right: 0;
+      width: 400px;
+      height: 600px;
+      background-color: #fff;
+      box-shadow: 0px 1px 15px 0px rgba(216, 216, 216, 0.50);
+      overflow: hidden;
+      z-index: 100;
+      .choose-remark {
+        display: inline-block;
+        margin-left: 20px;
+        margin-top: 5px;
+        color: #999;
+        font-size: 12px;
+      }
+      //无tab时标题
+      .normal-slip-head {
+        @include normal-slip-head();
+      }
+      //可选择列表
+      .list-container {
+        @include slip-list-container();
+      }
+      //有tab时的标题
+      .tab-slip-title {
+      }
+    }
+  }
+  //类似单据左侧折叠菜单公共样式，参见templates下的 leftCollapse.js
+  .leftCollapse {
+    .ant-collapse-item {
+      margin-bottom: 0 !important;
+    }
+    .ant-collapse-borderless > .ant-collapse-item > .ant-collapse-header {
+      //border-bottom: 1px solid $hongju-hr-color;
+      height: 55px;
+      line-height: 55px;
+      .arrow {
+        margin-top: 8px;
+      }
+      .anticon-plus-circle {
+        position: absolute;
+        font-size: 14px;
+        right: 24px;
+        top: 20px;
+      }
+    }
+    .ant-collapse-borderless > .ant-collapse-item > .ant-collapse-content {
+      border: 0;
+      background-color: transparent;
+    }
+    .ant-collapse-content > .ant-collapse-content-box {
+      padding-top: 0;
+      padding-bottom: 0;
+    }
+    .leftCollapseTitle {
+      font-size: 16px;
+      color: #697b8c;
+      line-height: 16px;
+      margin-right: 126px;
+    }
+    .leftCollapseAdd {
+      cursor: pointer;
+      position: absolute;
+      right: 24px;
+      top: 0px;
+      height: 36px;
+    }
+    .leftCollapseSubTitle {
+      font-size: 14px;
+      color: #697b8c;
+      line-height: 16px;
+      display: inline-block;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+      max-width: 150px !important;
+    }
+    .ant-collapse-content {
+      padding: 0;
+      .leftCollapseListWrap {
+        //max-height: 200px;
+        overflow-y: auto;
+        .leftCollapseListItem {
+          padding: 0 15px;
+          height: 53px;
+          line-height: 53px;
+          cursor: pointer;
+          font-family: PingFangSC-Regular;
+          font-size: 15px;
+          display: flex;
+          justify-content: flex-start;
+          .anticon-file-text {
+            color: #c0c4ca;
+            font-size: 20px;
+            margin-left: 15px;
+            line-height: 53px;
+            /* height: 53px; */
+          }
+          span {
+            display: inline-block;
+            width: 180px;
+            margin-left: 18px;
+            overflow: hidden;
+            white-space: nowrap;
+            text-overflow: ellipsis;
+          }
+        }
+        .leftCollapseSubListItem {
+          padding: 0 10px 0 30px;
+          height: 53px;
+          line-height: 53px;
+          cursor: pointer;
+          font-family: PingFangSC-Regular;
+          font-size: 14px;
+          .anticon-file-text {
+            color: #c0c4ca;
+            font-size: 14px;
+            margin-left: 15px;
+          }
+        }
+        .leftCollapseListItem:hover {
+          background: #f6f6f6;
+        }
+        .current {
+          background: #f6f6f6;
+        }
+      }
+    }
+    .leftCollapseHr {
+      margin: 0 15px;
+      height: 1px;
+      border-top: 1px solid $hongju-hr-color;
+    }
+  }
+  .ant-select {
+    font-size: 14px;
+  }
+}
+
+.edit-btn {
+  font-size: 12px;
+  color: $hongju-blue;
+  font-weight: normal;
+}
+
+//截图展示的modal 参见templates下的 sideslip.js
+.img-view-modal {
+  padding: 0;
+  margin: 0;
+  .ant-modal-header {
+    display: none
+  }
+  .ant-modal-footer {
+    display: none
+  }
+  .ant-modal-body {
+    padding: 0
+  }
+  .ant-modal-close {
+    display: none
+  }
+}
+
+//ant表格dropdown显示错位的bug
+.ant-dropdown-menu.ant-dropdown-menu-vertical.ant-table-selection-menu.ant-dropdown-menu-light.ant-dropdown-menu-root {
+  margin-left: 0;
+}
+
+.fn-clear:after {
+  visibility: hidden;
+  display: block;
+  font-size: 0;
+  content: " ";
+  clear: both;
+  height: 0
+}
+
+.fn-clear {
+  zoom: 1
+}
+
+.fn-hide {
+  display: none !important;
+}
+
+.require-star {
+  color: #ed7140;
+  position: absolute;
+  top: -5px;
+}
+
+.backToHomepage {
+  position: fixed;
+  //z-index: 10001;
+  bottom: 60px;
+  right: 16px;
+  width: 115px;
+  height: 46px;
+  line-height: 46px;
+  text-align: center;
+  color: #fff;
+  font-size: 14px;
+  background: $hongju-color;
+  cursor: pointer;
+  //box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.65);
+}
+
+//改变下拉框的小黑三角
+.ant-select-arrow:before {
+  content: '\E606';
+}
+
+.ant-checkbox-wrapper {
+  font-size: 14px;
+}
+
+.ant-input {
+  font-size: 14px;
+}
+
+.ant-select {
+  font-size: 14px;
+}
+
+.ant-select-dropdown {
+  font-size: 14px;
+}
+
+.ant-form-item-label {
+  font-size: 14px;
+}
+
+label {
+  font-size: 14px;
+}
+
+.anticon {
+  font-size: 12px;
+}

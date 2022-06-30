@@ -1,0 +1,32 @@
+.customRangeType{
+  .common-choose-input-box{
+    padding-right:0;
+  }
+}
+.customRangeTypeTab{
+  .ant-tabs-nav-container{
+    padding: 0 !important;
+  }
+  .ant-tabs-vertical > .ant-tabs-bar .ant-tabs-tab{
+    margin-bottom: 0 !important;
+  }
+  .ant-tabs-nav .ant-tabs-tab-active {
+    background: $hongju-choosed-color;
+  }
+  .ant-tabs-vertical.ant-tabs-left > .ant-tabs-content{
+    padding-left:0;
+    padding:10px 12px;
+  }
+  .ant-calendar-picker {
+    margin: 10px 0;
+  }
+  .calendarBtn{
+    margin-top:10px;
+  }
+  .ant-btn-default{
+    margin:0 12px;
+  }
+} 
+.ant-popover-inner-content{
+    padding:0;
+  }

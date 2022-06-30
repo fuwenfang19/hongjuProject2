@@ -1,0 +1,18 @@
+.workflow-page {
+  .steps-add-container {
+    .ant-tabs-nav.ant-tabs-nav-animated {
+      text-align: center;
+      float: none;
+    }
+    .ant-tabs-bar {
+      border-bottom: 0;
+    }
+    li.list-item {
+      min-height: 0 !important;
+    }
+    .list-container{
+      padding-top: 0 !important;
+    }
+  }
+}
+

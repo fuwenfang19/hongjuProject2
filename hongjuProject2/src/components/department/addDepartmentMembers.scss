@@ -1,0 +1,66 @@
+.department-page {
+
+}
+.ant-modal-close-x {
+  font-size: 20px;
+}
+.ant-form-explain{
+  position: absolute;
+}
+.add-or-edit-department .ant-modal-body {
+
+ }
+.ant-col-12{
+  width:49%;
+}
+.ant-advanced-search-form .ant-input{
+  height: 32px;
+}
+.ant-advanced-search-form{
+  .ant-form-item-label{
+    width: 33%;
+  }
+  .ant-form-item-control-wrapper{
+    width: 67%;
+  }
+}
+.add-project-members{
+
+  .ant-modal-content{
+    width: 700px;
+  }
+  .ant-modal-footer{
+    display: none;
+    border-bottom: 1px solid #ccc;
+  }
+}
+.add-or-edit-department{
+  top: 12px;
+}
+.AddDepartmentMembers-left{
+      padding-left: 30px;
+      line-height: 32px;
+      color: rgba(0, 0, 0, 0.65);
+      font-size: 12px;
+}
+.AddDepartmentMembers-right{
+      padding-right: 30px;
+      line-height: 32px;
+      color: rgba(0, 0, 0, 0.65);
+      font-size: 12px;
+      span{
+            margin-right: 12px;
+      }
+}
+.add-or-edit-department{
+  .ant-col-40{
+    width: 50%;
+    float: left;
+    .ant-col-7{
+      width: 50%;
+    }
+    .ant-col-17{
+      width: 50%;
+    }
+  }
+}

@@ -1,0 +1,31 @@
+.project-page {
+
+}
+
+.add-or-edit-project {
+  .ant-modal-body{
+    height: 65vh;
+  }
+  .ant-modal-content {
+    width: 700px;
+    z-index: 10;
+    .ant-col-12 {
+      position: relative;
+    }
+    .ant-col-24.left {
+      position: absolute;
+      top: 28px;
+      left: -20px;
+      z-index: 100;
+    }
+    .ant-col-24.right {
+      position: absolute;
+      top: 28px;
+      right: 328px;
+      z-index: 100;
+    }
+  }
+  .ant-form-item-control {
+    line-height: normal;
+  }
+}

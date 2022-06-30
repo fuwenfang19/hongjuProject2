@@ -1,0 +1,446 @@
+.homePage {
+  font-family: "微软雅黑";
+  .ant-table-selection-down{
+    display: none;
+  }
+  .ant-carousel .slick-dots li button{
+    width: 8px;
+    height: 8px;
+    border-radius: 4px;
+  }
+
+  .ant-table-thead > tr > th.ant-table-selection-column{
+    padding:0 0 0 5px;
+  }
+  .content-right {
+    padding: 20px 0px 0px 24px;
+    overflow: hidden;
+    .homePage-body-left-show {
+      .homePage-body-left-head1 {
+        display: none;
+      }
+      .homePage-body-left-head {
+        display: block;
+        cursor: pointer;
+      }
+    }
+    .homePage-body-left-hide {
+      .info-value {
+        max-width: 76px;
+      }
+      .homePage-body-left-head1 {
+        display: block;
+      }
+      .homePage-body-left-head {
+        display: none;
+      }
+    }
+    .homePage-head {
+      height: 166px;
+      display: flex;
+      justify-content: space-between;
+      padding-bottom: 30px;
+      margin-bottom: 10px;
+      padding-right: 26px;
+    }
+    .homePage-head-left {
+      cursor: pointer;
+      min-width: 375px;
+      height: 166px;
+      border-radius: 6px;
+      .homePage-body-left-head {
+      }
+    }
+    .homePage-head-right {
+      margin-left: 28px;
+      min-width: 500px;
+      height: 166px;
+      .ant-carousel .slick-dots li button{
+        background: #ffffff;
+      }
+      .ant-carousel{
+        -webkit-border-radius: 5px;
+        -moz-border-radius: 5px;
+        border-radius: 5px;
+        overflow: hidden;
+      }
+      .ant-carousel .slick-slider {
+        text-align: center;
+        height: 166px;
+        line-height: 166px;
+        background: #53bef9;
+        color: #fff;
+        overflow: hidden;
+      }
+    }
+    .homePage-body {
+      display: flex;
+      justify-content: space-between;
+      .homePage-body-left {
+        width: 90%;
+        .homePage-body-left-head1 {
+          height: 56px;
+          text-indent: 20px;
+          color: #666;
+          font-size: 16px;
+          line-height: 56px;
+          padding-right: 20px;
+          .homePage-body-left-head1-department{
+            cursor: pointer;
+            display: block;
+            float: right;
+          }
+        }
+        .homePage-body-left-head {
+          i {
+            margin-right: 10px;
+          }
+
+          height: 56px;
+          line-height: 56px;
+          background: #108ee9;
+          color: #ffffff;
+          .homePage-body-left-head-left {
+            float: left;
+            .ant-btn {
+              border: none;
+              background: none;
+            }
+          }
+          .homePage-body-left-head-right {
+            text-align: right;
+            float: right;
+            .homePage-body-left-head-right-marg {
+              margin: 0 10px;
+            }
+          }
+        }
+      }
+      .homePage-body-right {
+        width: 97px;
+        .homePage-body-right-ke {
+          background: #ed7140;
+          width: 60px;
+          height: 60px;
+          position: absolute;
+          bottom: 60px;
+          right: 0;
+        }
+      }
+    }
+  }
+  .beginnerGuide {
+    padding: 0;
+    .ant-carousel .slick-dots li button{
+      background: #ed7140;
+    }
+    .beginnerGuide-head {
+      height: 56px;
+      line-height: 56px;
+      width: 100%;
+      background: #e5e5e5;
+      text-indent: 20px;
+      span {
+        color: #666;
+        font-size: 16px;
+        line-height: 60px;
+        text-indent: 30px;
+      }
+    }
+    .beginnerGuide-body {
+      display: flex;
+      width: 100%;
+      height:93%;
+      justify-content: space-between;
+      .beginnerGuide-body-left {
+        width: 70%;
+        padding:0 20px;
+        .beginnerGuide-body-left1 {
+          height: 16%;
+          margin-top: 29px;
+          text-align: center;
+        }
+        .beginnerGuide-body-left3 {
+          height: 10%;
+          padding: 0 25%;
+          margin-top: 5%;
+          text-align: left;
+          span {
+            height: 29px;
+            font-family: PingFangSC-Regular;
+            font-size: 14px;
+            color: #666666;
+            line-height: 29px;
+            text-align: left;
+            //white-space: nowrap;
+            //overflow: hidden;
+            //text-overflow: ellipsis;
+          }
+        }
+        .beginnerGuide-body-left4 {
+          height: 16%;
+          margin-top: 14px;
+          display: flex;
+          justify-content: space-between;
+          .lump1, .lump2, .lump3 {
+            cursor: pointer;
+            background: #ffffff;
+            //box-shadow: 0px 2px 6px 0px rgba(0, 0, 0, 0.22);
+            border:1px solid rgba(0, 0, 0, 0.22);
+            border-radius: 8px;
+            min-width: 160px;
+            height: 93px;
+            margin: 0 10px;
+            color: #ffffff;
+            width: 30%;
+          }
+          .lump1:hover, .lump2:hover, .lump3:hover{
+            box-shadow: 1px 2px 6px 1px rgba(0, 0, 0, 0.22);
+            border:none;
+          }
+          .lump1, .lump2, .lump3 {
+            display: flex;
+            justify-content: space-between;
+            .lump1-1 {
+              .lump1-1-1{
+                width: 34px;
+                height: 34px;
+                border-radius: 100%;
+                margin: 25px 0 29px 28px;
+                text-align: center;
+                line-height: 34px;
+              }
+            }
+            .lump1-2 {
+              width: 70%;
+              height: 93px;
+              font-family: PingFangSC-Regular;
+              font-size: 14px;
+              color: #333333;
+              text-align: left;
+              margin: 32px 0 39px 18px;
+              white-space: nowrap;
+              overflow: hidden;
+              text-overflow: ellipsis;
+            }
+          }
+        }
+        .beginnerGuide-body-left5 {
+          margin-top: 30px;
+          height: 16%;
+          width: 100%;
+          text-align: center;
+          display: flex;
+          justify-content: space-between;
+          padding: 0 15%;
+          .lump4, .lump5 {
+            cursor: pointer;
+            background: #ffffff;
+            //box-shadow: 0px 2px 6px 0px rgba(0, 0, 0, 0.22);
+            border:1px solid rgba(0, 0, 0, 0.22);
+            border-radius: 8px;
+            min-width: 160px;
+            height: 93px;
+            float: left;
+            color: #fff;
+            width: 42%;
+          }
+          .lump4:hover, .lump5:hover{
+            box-shadow: 1px 2px 6px 1px rgba(0, 0, 0, 0.22);
+            border:none;
+          }
+          .lump4, .lump5 {
+            display: flex;
+            justify-content: space-between;
+            .lump1-1 {
+              .lump1-1-1{
+                width: 34px;
+                height: 34px;
+                border-radius: 100%;
+                margin: 25px 0 29px 28px;
+                text-align: center;
+                line-height: 34px;
+              }
+            }
+            .lump1-2 {
+              width: 70%;
+              height: 93px;
+              font-family: PingFangSC-Regular;
+              font-size: 14px;
+              color: #333333;
+              text-align: left;
+              margin: 32px 0 39px 18px;
+            }
+          }
+          .lump4 {
+            margin-right: 2%;
+          }
+        }
+      }
+
+      .beginnerGuide-body-right {
+        width: 30%;
+        background: #e5e5e5;
+
+        @media only screen and (min-width : $small-devices){
+          .ant-carousel .slick-dots{
+            bottom: -12px;
+          }
+          .beginnerGuide-body-right1 {
+            height: 70px;
+            .p1, .p2 {
+              font-family: PingFangSC-Regular;
+              color: #666666;
+              text-align: center;
+            }
+            .p1 {
+              font-size: 24px;
+            }
+            .p2 {
+              font-size: 14px;
+            }
+          }
+          .beginnerGuide-body-right2 {
+            height: 360px;
+            width: 100%;
+            display:block;
+            margin: 0 auto;
+            border:none;
+            text-align: center;
+            .img1,.img2,.img3{
+              width: 100%;
+              height: 332px;
+              border:none;
+            }
+            .img1{
+              background: url('images/homePage/yiDong1.png') no-repeat center center;
+            }
+            .img2{
+              background: url('images/homePage/yiDong2.png') no-repeat center center;
+            }
+            .img3{
+              background: url('images/homePage/yiDong3.png') no-repeat center center;
+            }
+          }
+          .beginnerGuide-body-right3 {
+            height: 129px;
+            width: 100%;
+            text-align: center;
+            .foot-page{
+              width: 100%;
+              height: 101px;
+              background: url('images/homePage/mark1.png') no-repeat center center;
+            }
+          }
+        }
+        @media only screen and (min-width : $medium-devices){
+          .ant-carousel .slick-dots{
+            bottom:25px;
+          }
+          .beginnerGuide-body-right1 {
+            height: 30px;
+            .p1, .p2 {
+              font-family: PingFangSC-Regular;
+              color: #666666;
+              text-align: center;
+            }
+            .p1 {
+              font-size: 24px;
+            }
+            .p2 {
+              font-size: 14px;
+            }
+          }
+          .beginnerGuide-body-right2 {
+            height: 380px;
+            width: 100%;
+            display:block;
+            margin: 0 auto;
+            top:0;
+            border:none;
+            text-align: center;
+            //.imgs{
+            //  border:none;
+              .img1,.img2,.img3{
+                width: 100%;
+                height: 398px;
+                border:none;
+              }
+              .img1{
+                background: url('images/homePage/yiDong1.png') no-repeat center center;
+              }
+              .img2{
+                background: url('images/homePage/yiDong2.png') no-repeat center center;
+              }
+              .img3{
+                background: url('images/homePage/yiDong3.png') no-repeat center center;
+              }
+          }
+
+          .beginnerGuide-body-right3 {
+            height: 129px;
+            width: 100%;
+            text-align: center;
+            .foot-page{
+              width: 100%;
+              height: 101px;
+              background: url('images/homePage/mark1.png') no-repeat center center;
+            }
+          }
+        }
+        @media only screen and (min-width : $large-devices){
+          .ant-carousel .slick-dots{
+            bottom: -12px;
+          }
+          .beginnerGuide-body-right1 {
+            height: 90px;
+            .p1, .p2 {
+              font-family: PingFangSC-Regular;
+              color: #666666;
+              text-align: center;
+            }
+            .p1 {
+              font-size: 24px;
+            }
+            .p2 {
+              font-size: 14px;
+            }
+          }
+          .beginnerGuide-body-right2 {
+            height: 460px;
+            width: 100%;
+            display:block;
+            margin: 0 auto;
+            border:none;
+            text-align: center;
+            .img1,.img2,.img3{
+              width: 100%;
+              height: 422px;
+              border:none;
+            }
+            .img1{
+              background: url('images/homePage/yiDong7.png') no-repeat center center;
+            }
+            .img2{
+              background: url('images/homePage/yiDong8.png') no-repeat center center;
+            }
+            .img3{
+              background: url('images/homePage/yiDong9.png') no-repeat center center;
+            }
+          }
+          .beginnerGuide-body-right3 {
+            height: 150px;
+            width: 100%;
+            text-align: center;
+            .foot-page{
+              width: 100%;
+              height: 148px;
+              background: url('images/homePage/mark3.png') no-repeat center center;
+            }
+          }
+        }
+
+      }
+    }
+  }
+}

@@ -1,0 +1,24 @@
+.department-page {
+
+}
+
+.batch-edit-department{
+  .ant-modal-content{
+    width: 700px;
+    .ant-modal-body{
+      padding:30px 80px;
+    }
+  }
+  .ant-form-item-control{
+    line-height: normal;
+  }
+  .ant-advanced-search-form{
+    .ant-row{
+      margin-left: 180px;
+      margin-bottom: 30px;
+      .ant-col-12 {
+          width: 94.5%;
+      }
+    }
+  }
+}

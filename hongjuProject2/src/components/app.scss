@@ -1,0 +1,241 @@
+body {
+  //overflow-y: hidden;
+}
+
+@mixin headerImgSize {
+  width: 22px;
+  height: 22px;
+}
+
+$content-minWidth: 1200px;
+$left-not-collapsed-width: 180px;
+#root {
+
+  min-width: $content-minWidth;
+
+  .hj-menu {
+    .problemPage {
+      position: absolute;
+      width: 360px;
+      height: 454px;
+      background: #ffffff;
+      z-index: 999;
+      right: 50px;
+      top: 64px;
+      box-shadow: 0px 1px 15px 0px #d8d8d8;
+      border-radius: 3px;
+      padding: 0 21px;
+      .problemPage-title {
+        font-family: PingFangSC-Medium;
+        font-size: 16px;
+        color: #333333;
+        line-height: 16px;
+        text-align: center;
+        margin-top: 20px;
+        margin-bottom: 24px;
+        position: relative;
+        .problemPage-close {
+          position: absolute;
+          right: 20px;
+          top: 0px;
+        }
+      }
+      .problemPage-head {
+        border: 1px solid #e5e5e5;
+        border-radius: 3px;
+        width: 318px;
+        height: 54px;
+        text-align: center;
+        line-height: 54px;
+        font-size: 16px;
+        color: #666;
+        margin-bottom: 10px;
+      }
+      .problemPage-text {
+        border: 1px solid #e5e5e5;
+        border-radius: 3px;
+        width: 318px;
+        height: 164px;
+        margin-bottom: 10px;
+      }
+      .problemPage-ok {
+        background: #ed7140;
+        border-radius: 3px;
+        width: 318px;
+        height: 50px;
+        text-align: center;
+        line-height: 50px;
+        border: none;
+        margin-bottom: 30px;
+        font-size: 16px;
+      }
+      .problemPage-help {
+        font-size: 16px;
+        color: #666;
+      }
+    }
+    .link-name {
+      padding-left: 10px;
+      &:before {
+        font-family: "anticon" !important;
+        font-style: normal;
+        vertical-align: baseline;
+        text-align: center;
+        text-transform: none;
+        text-rendering: auto;
+        position: absolute;
+        transition: transform .3s ease;
+        content: "\E698";
+        left: 30px;
+        top: 0;
+        display: inline-block;
+        font-size: 14px;
+        font-size: 8px \9
+      ;
+        //transform: scale(0.66666667) rotate(-90deg);
+        /* IE6-IE8 */
+        -ms-filter: "progid:DXImageTransform.Microsoft.Matrix(sizingMethod='auto expand', M11=1, M12=0, M21=0, M22=1)";
+        zoom: 1;
+      }
+    }
+    .ant-layout-header {
+      min-width: $content-minWidth;
+      * div {
+        line-height: 48px;
+      }
+      .header-container {
+        display: flex;
+
+        .user-info-label {
+          font-size: 14px;
+        }
+
+        .user-logo-name {
+          i {
+            min-width: 30px;
+            font-size: 16px;
+          }
+          background-color: #ccc;
+          padding: 0 16px;
+        }
+        .header-btn-container {
+          padding-right: 6px;
+          min-width: 30px;
+          i {
+            font-size: 16px;
+          }
+          img {
+            @include headerImgSize;
+          }
+        }
+      }
+    }
+    //菜单左侧
+    .ant-menu-submenu-vertical {
+      z-index: 4;
+    }
+
+    //左侧的菜单滚动条处理
+    .side-bar-visible {
+      overflow: visible;
+    }
+    //左侧的菜单滚动条处理
+    .side-bar-auto {
+      overflow: auto;
+      width: $left-not-collapsed-width !important;
+    }
+
+    //左侧的菜单背景颜色
+    .ant-layout-sider {
+      .ant-menu-item {
+        text-align: center;
+      }
+      background-color: #fff;
+      .ant-menu-inline {
+        .ant-menu-item {
+          text-align: left;
+        }
+      }
+    }
+    //红橘logo
+    .logo {
+      transition: all .1s ease;
+      background-color: $hongju-logo;
+      .trigger {
+        font-size: 18px;
+        padding: 0 24px;
+        cursor: pointer;
+        transition: color .3s;
+        color: #fff;
+      }
+      .trigger:hover {
+        color: #108ee9;
+      }
+      .logo-title {
+        color: #fff;
+        font-size: 16px;
+        font-weight: normal;
+        cursor: default;
+      }
+    }
+
+    //合并菜单时
+    .ant-layout-sider-collapsed {
+      //合并菜单的li
+      .ant-menu-vertical {
+        .link-name {
+          &::before {
+            left: 0;
+            margin-left: 6px;
+          }
+        }
+        li.ant-menu-item, .ant-menu-submenu-title {
+          height: 44px;
+        }
+        li span.nav-text, .ant-menu-submenu-title span span {
+          display: inline-block !important;
+          position: absolute;
+          left: 0;
+          top: 0;
+          right: 0;
+          bottom: 0;
+          margin: 16px auto; /* 居中 */
+        }
+        .anticon-right {
+          display: none;
+        }
+        .ant-menu-sub .ant-menu-item {
+          text-align: left;
+        }
+        .ant-menu-submenu-title {
+          span {
+            span {
+              display: none;
+            }
+          }
+          text-align: center;
+          &::after {
+            right: 4px;
+          }
+        }
+
+      }
+      .anticon {
+        font-size: 16px;
+        margin: 0;
+      }
+
+      .nav-text {
+        display: none;
+      }
+      .logo-title {
+        display: none;
+      }
+    }
+
+    .back-to-old{
+      padding-right: 10px;
+    }
+  }
+}
+

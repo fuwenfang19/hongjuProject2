@@ -1,0 +1,189 @@
+.found-operator-right-modal {
+    width: 350px!important;
+    top: 100px;
+}
+
+.found-operator-right-modal-div {
+    height: 50px;
+    text-align: center;
+    line-height: 50px;
+    position: relative;
+    top: 15px;
+    font-size: 14px;
+}
+
+.found-box {
+    background-color: #fff;
+    height: 100%;
+    .ant-table {
+        font-size: 14px;
+    }
+    .ant-input {
+        border-radius: 2px;
+    }
+    .ant-checkbox-wrapper {
+        font-size: 14px;
+    }
+    .ant-table-thead>tr>th {
+        color: #999;
+    }
+    .ant-table-thead>tr>th,
+    .ant-table-tbody>tr>td {
+        padding: 16px 20px;
+    }
+    .ant-table-thead>tr>th {
+        padding-left: 30px;
+    }
+    //
+    .ant-table-thead>tr>th.ant-table-selection-column,
+    .ant-table-tbody>tr>td.ant-table-selection-column {
+        width: 32px;
+    }
+    .found-operator {
+        height: 56px;
+        line-height: 56px;
+        padding: 0 20px;
+        border-bottom: 1px solid #ccc;
+    }
+    .found-operator-left {
+        float: left;
+        font-size: 16px;
+    }
+    .found-operator-left span {
+        display: inline-block;
+    }
+    .found-operator-left i {
+        display: inline-block;
+        margin-left: 10px;
+    }
+    .found-operator-right {
+        float: right;
+        height: 100%;
+        padding-top: 12px;
+    }
+    .found-operator-right button {
+        margin-left: 10px;
+        min-width: 86px;
+        height: 32px;
+        line-height: 32px;
+        box-sizing: border-box;
+        float: left;
+        padding: 0;
+        font-size: 14px;
+    }
+    .found-operator-right-normal {
+        background: #449ff7;
+        border-radius: 2px;
+        border: 0;
+        font-weight: normal;
+        margin-left: 10px;
+    }
+    .found-operator-right-negative {
+        background: rgba(68, 159, 247, 0.50);
+        border-radius: 2px;
+        border: 0;
+        opacity: 0.5;
+        color: #ffffff;
+    }
+    .found-operator-right-cancel {
+        border: 1px solid #449ff7;
+        border-radius: 2px;
+        height: 24px;
+        background-color: #fff;
+        color: #449ff7;
+    }
+    .found-table .ant-table-thead th {
+        background: #f6f6f6;
+        height: 40px;
+    }
+    .found-table-box {}
+    .found-table-box-header {
+        position: relative;
+    }
+    .found-table-box-header:after {
+        content: '*';
+        position: absolute;
+        width: 8px;
+        height: 14px;
+        right: -10px;
+        top: -4px;
+        color: #ed7140;
+        font-size: 14px;
+    }
+    .ant-table-tbody>tr>td {
+        padding: 0 20px;
+        height: 47px;
+    }
+    .found-table-row {
+        background-color: #fff;
+        &>td>div {
+            padding-left: 10px;
+        }
+        &>td>.approve-limit-choose-bill-type {
+            padding-left: 0;
+        }
+    }
+    .found-table-row-editing {
+        background: #ecf6fd;
+    }
+    .found-table-row-swich-title {
+        display: inline-block;
+        vertical-align: middle;
+        margin-right: 10px;
+    }
+    .found-table-row-negative {
+        background-color: #fff;
+        &>td>div {
+            padding-left: 10px;
+        }
+        &>td>.approve-limit-choose-bill-type {
+            padding-left: 0;
+        }
+    }
+    .found-table-row-input {
+        display: inline-block;
+        padding: 5px 0;
+        width: 100%;
+        border: 0;
+        box-sizing: border-box;
+        font-size: 14px;
+        padding-left: 10px;
+    }
+    .found-table-row-input:focus {
+        box-sizing: border-box;
+    }
+    .found-table-row-input:hover {
+        box-sizing: border-box;
+    }
+    .found-table-row-code-repeat {
+        border: 2px solid $hongju-error;
+    }
+    .found-table-row-name-repeat {
+        border: 2px solid $hongju-blue;
+    }
+    .found-table .ant-table-selection-down {
+        display: none;
+    }
+    .found-table .ant-table-selection-select-all {
+        margin-left: -12px;
+    }
+    .close-icon {
+        display: none;
+    }
+    .input-clear-item:hover {
+        .close-icon {
+            display: block;
+            cursor: pointer;
+
+            width: 30px;
+            height: 28px;
+            line-height: 30px;
+            background: #fff;
+            position: absolute;
+            right: 0;
+            top: 9px;
+            text-align: center;
+        }
+        padding-right:30px;
+    }
+}

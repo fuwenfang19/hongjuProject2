@@ -1,0 +1,36 @@
+.expenseType-page{
+  .billingHighConWrap{
+    overflow-y: auto
+  }
+  .highBillingSettingArea{
+    padding:0;
+    .highBillingSettingInfo{
+      padding-left:54px;
+      color:#999;
+    }
+  }
+  .choose-side-slip .slip-real-container .billingHighConWrap .list-container {
+    //padding-top: 0px;
+  }
+  .ant-select-selection__rendered{
+    margin-right:0;
+  }
+  .ant-select-selection__rendered{
+        margin-left:0;
+    }
+    .ant-select-enabled{
+        margin-right:10px;
+    }
+  .ant-select-arrow{
+    right:-2px;
+  }
+  .ant-tabs-bar{
+    margin-bottom:0;
+  }
+  .ant-tabs-nav{
+    font-size: 12px;
+  }
+}
+.ant-select-dropdown-menu-item{
+  text-overflow: ellipsis;
+}

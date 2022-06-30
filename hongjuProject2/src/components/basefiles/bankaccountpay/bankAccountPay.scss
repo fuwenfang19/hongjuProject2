@@ -1,0 +1,10 @@
+.bank-account-page {
+  background-color: $hongju-background-color;
+
+  //tabs居中显示
+  .ant-tabs-nav.ant-tabs-nav-animated {
+    text-align: center;
+    width: 100%;
+    line-height: 36px;
+  }
+}

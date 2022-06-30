@@ -1,0 +1,77 @@
+.approve-limit-choose-bill-type {
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+.approve-limit-choose-bill-type-val {
+    width: 100%;
+    height: 46px;
+    line-height: 46px;
+}
+
+.approve-limit-choose-bill-type-items-botom {
+    position: absolute;
+    top: 46px;
+    z-index: 100;
+    .billType-box {
+        width: 100%;
+    }
+    .file-choose-box {
+        width: 100%;
+        padding-left: 0;
+        .file-choose-right-box {
+            width: 100%;
+            float: none;
+        }
+    }
+}
+
+.approve-limit-choose-bill-type-items-top {
+    position: absolute;
+    top: -300px+47px-8px;
+    z-index: 100;
+    .billType-box {
+        width: 100%;
+    }
+    .file-choose-box {
+        width: 100%;
+        padding-left: 0;
+        .file-choose-right-box {
+            width: 100%;
+            float: none;
+        }
+    }
+}
+
+.position-choose-box {
+    height: 300px;
+    width: 540px;
+    overflow: auto;
+    background-color: #fff;
+    border: 1px solid #bfbfbf
+}
+
+.position-choose-box .check-box:hover {
+    .ant-checkbox-wrapper:hover {
+        background: #e9e9e9;
+    }
+}
+
+.position-choose-box .check-box {
+    padding-bottom: 0;
+    .ant-checkbox {
+        display: none;
+    }
+}
+
+.position-choose-box .check-box {
+    height: 250px;
+}
+
+.choose-bill-type-pop {
+    .ant-popover-inner-content {
+        padding: 0;
+    }
+}
+

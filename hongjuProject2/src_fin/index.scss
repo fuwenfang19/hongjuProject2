@@ -1,0 +1,30 @@
+//global and src common
+@import "../src/global/style/share";
+//common
+@import "../src/components/app";
+@import "../src/components/common/lazyTree";
+@import "../src/components/common/choose";
+@import '../src/components/common/billTypeChoose';
+@import "../src/components/common/toast";
+@import "../src/components/common/conform";
+@import "../src/components/common/disableList";
+@import "../src/components/common/NoInfo";
+//@import '../src/components/common/newUserIntroduce';
+@import "../src/components/common/editTable";
+@import "../src/components/common/searchConditions/searchConditions";
+
+@import "components/app";
+
+//pages
+
+//我的预算申请
+@import "components/budgetapplication/BudgetApplication";
+@import "components/budgetapplication/BudgetAdjustApplication";
+
+//预算单据待审批
+@import "components/budgetUnapproved/budgetUnapprovedInfo";
+@import "components/budgetUnapproved/index";
+
+//预算单据已审批
+@import "components/budgetApproved/budgetApprovedInfo";
+@import "components/budgetApproved/index";

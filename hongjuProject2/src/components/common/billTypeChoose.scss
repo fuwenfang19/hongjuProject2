@@ -1,0 +1,71 @@
+.billType-box {
+    height: 300px;
+    border:1px solid #bfbfbf;
+    background-color: #fff;
+    .ant-collapse {
+        background-color: #fff;
+    }
+    .ant-checkbox-wrapper:not(:last-child) {
+        margin-right: 0;
+    }
+}
+
+.billType-to-choose {
+    height: 250px;
+    width: 540px;
+    overflow: auto;
+    border: 0;
+}
+
+
+
+.billType-to-choose label {
+    display: block;
+    margin: 5px 0;
+    span {
+        display: inline-block;
+        padding: 5px;
+    }
+}
+.billType-to-choose label:hover {
+    background: #e9e9e9;
+}
+
+.billType-choosed {
+    height: 43px;
+    padding: 5px;
+    padding-bottom: 8px;
+}
+
+.billType-confirm-left {
+    float: left;
+    .checked-item {
+        float: left;
+        margin-right: 0;
+        margin-top: 0;
+        background-color: rgba(0, 100, 0, 0.05);
+    }
+}
+
+.billType-confirm-right {
+    float: right;
+}
+
+.billType-confirm-right button {
+    margin-left: 5px;
+}
+
+.checkbox-block {
+    .ant-checkbox {
+        display: none;
+    }
+}
+.billType-to-choose-panel label{
+    padding-left:20px;
+}
+.billType-to-choose-panel h5{
+    font-size:14px;
+    font-weight: bolder;
+    padding: 5px;
+    cursor: default;
+}

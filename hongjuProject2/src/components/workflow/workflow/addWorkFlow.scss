@@ -1,0 +1,56 @@
+.add-work-flow {
+  .bill-name{
+    color: $hongju-blue;
+  }
+  .ant-modal-content {
+    width: 700px;
+  }
+  .ant-modal-body {
+    min-height: 400px;
+  }
+
+  .add-container {
+    display: flex;
+    justify-content: space-around;
+    .left, .right {
+      display: inline-block;
+      border: solid 1px $hongju-border-color;
+      height: 400px;
+    }
+    .left {
+      width: 200px;
+      border-right: none;
+      ul {
+        li {
+          height: 30px;
+          line-height: 30px;
+          border-bottom: solid 1px $hongju-border-color;
+          padding-left: 10px;
+          cursor: pointer;
+        }
+        li.active {
+          border-left: solid 3px $hongju-color;
+          padding-left: 7px;
+          background-color: $hongju-gray-background;
+        }
+      }
+    }
+    .right {
+      flex: 1;
+      overflow: auto;
+      p {
+        height: 40px;
+        line-height: 40px;
+        border-bottom: solid 1px $hongju-border-color;
+        padding-left: 10px;
+        cursor: default;
+      }
+      ul li {
+        padding-left: 20px;
+        line-height: 30px;
+        cursor: default;
+      }
+    }
+  }
+
+}

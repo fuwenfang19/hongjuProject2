@@ -1,0 +1,47 @@
+.edit-customExpand {
+  .ant-modal-body {
+    height: 65vh;
+  }
+  .ant-modal-content {
+    width: 760px;
+    z-index: 10;
+    .ant-col-12 {
+      position: relative;
+    }
+    .ant-table-row {
+      height: 61px;
+    }
+    .ant-col-24.left {
+      position: absolute;
+      top: 28px;
+      left: -20px;
+      z-index: 100;
+    }
+    .ant-col-24.right {
+      position: absolute;
+      top: 28px;
+      right: 328px;
+      z-index: 100;
+    }
+  }
+  .ant-form-item-control {
+    line-height: normal;
+  }
+}
+
+.editable-row-dataType {
+  padding-left: 8px;
+}
+
+.editable-row-showName {
+  padding-left: 8px;
+}
+
+.ant-popover-message {
+  padding-left: 11px;
+}
+
+.ant-popover-buttons {
+  padding-bottom: 13px;
+}
+

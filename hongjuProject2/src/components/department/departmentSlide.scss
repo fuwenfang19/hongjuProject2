@@ -1,0 +1,188 @@
+/*
+*creat by yangyfe 2017.03.02
+*侧滑的模块
+*/
+.departmentSlideBg{
+  color: #ffffff;
+  font-family: "微软雅黑";
+    .departmentSlideCon{
+       .departmentSlideContent1{
+         display: flex;
+         justify-content: space-between;
+         width:100%;
+         text-align: center;
+         position: relative;
+         .departmentSlideContent1-left{
+           width: 100%;
+           .departmentSlideContent1-left-cirl{
+             height: 60px;
+             width: 60px;
+             font-size: 18px;
+             margin: 10px 0px 0 47%;
+             background: #fff;
+             border-radius: 30px;
+             color: #2c2d46;
+             box-shadow: 0px 6px 13px 0px #2c2d46;
+             line-height: 60px;
+             font-weight: 400;
+           }
+         }
+         .departmentSlideContent1-right{
+           height: 30px;
+           width: 30px;
+           position: absolute;
+           top: 5%;
+           left:56%;
+           cursor: pointer;
+         }
+       }
+      .departmentSlideContent2,.departmentSlideContent3{
+        width:100%;
+        height:40px;
+      }
+      .departmentSlideContent2{
+        text-align: center;
+        font-size: 16px;
+        line-height: 40px;
+      }
+      .departmentSlideContent3{
+        display: flex;
+        justify-content: space-between;
+        .span{
+          line-height: 40px;
+          margin-right: 2%;
+        }
+        .span1{
+          margin-left: 12%;
+        }
+        .span2{
+          margin-right: 4%;
+        }
+        .span1{
+          width: 15%;
+        }
+        .span3,.span4,.span2{
+          width: 20%;
+        }
+      }
+    }
+}
+
+.departmentSlideBg, .departmentSlideBg .hideEvent{
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width:100%;
+}
+.departmentSlideBg {
+  width: 100%;
+  height: 100%;
+  z-index: 5;
+}
+.departmentSlideBg .departmentSlideCon {
+  position: fixed;
+  top: 64px;
+  right: 0;
+  width: 55%;
+  height: 100%;
+  background-color: #fff;
+  box-shadow: 0 2px 4px rgba(0,0,0,.2);
+  overflow: hidden;
+  .ant-row{
+    margin: 0px;
+    padding: 0px;
+    .gutter-row{
+      width: 40%;
+      margin-left: 8%;
+      margin-right: 0;
+      padding:0.4% 0;
+    }
+  }
+}
+
+.departmentSlideBg .departmentSlideCon .new_Slide_head {
+  width: 100%;
+  background: #2c2d46;
+  text-align: center;
+  line-height: 50px;
+  position: relative;
+  font-weight: 100;
+  //display: flex;
+  //justify-content: space-between;
+  //.departmentSettingcon{
+  //  width:250px;
+  //  height: 50px;
+  //  line-height: 50px;
+  //  text-align: center;
+  //}
+  cursor:pointer;
+  .hide_new_task {
+    position: absolute;
+    right: 2%;
+    top: 20%;
+    font-size: 14px;
+    cursor: pointer;
+    z-index: 1;
+  }
+  .departmentSettingcon{
+    position: absolute;
+    width: 45%;
+    top: 0;
+    right: 0;
+    span{
+      margin: 0 8%;
+    }
+  }
+}
+.billingSettingCon{
+    padding:0 20px;
+  }
+.slide-down .ant-col-6{
+  //float: none;
+}
+.slider-button{
+  width: 100%;
+  bottom: 90px;
+  display: flex;
+  position: absolute;
+  .slider-btn{
+    width: 50%;
+    margin-left: 42%;
+    Button{
+      margin: 0 8px;
+      width: 80px;
+      height: 30px;
+      background: #fff;
+      text-align: center;
+      border: none;
+      background: none;
+      outline:none;
+    }
+    img{
+      background-size: contain;
+      width: 26px;
+      height: 26px
+    }
+    div{
+      color: #666;
+    }
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

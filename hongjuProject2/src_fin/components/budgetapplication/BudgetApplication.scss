@@ -1,0 +1,27 @@
+.budget-application-page {
+  .page-container {
+    text-align: right;
+    padding-top: 10px;
+  }
+
+}
+
+.bill-name-pop{
+  .ant-popover-inner-content{
+    padding-left: 2px;
+    padding-right: 2px;
+  }
+  .popover-bill-type-name-container {
+    font-size: 14px;
+    max-height: 300px;
+    overflow: auto;
+    .popover-bill-type-name {
+      padding-left: 16px;
+      line-height: 28px;
+      cursor: pointer;
+      &:hover{
+        background-color: $hongju-gray-background;
+      }
+    }
+  }
+}

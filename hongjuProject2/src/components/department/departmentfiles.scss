@@ -1,0 +1,38 @@
+/*
+*create by yangyfe 2017.02.23
+*上传文件页面的样式
+* */
+
+.department-page {
+  .download_and_upload {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 300px;
+    height: 80%;
+
+    div {
+      text-align: center;
+      h3{
+        margin: 10px;
+      }
+    }
+    .btn-container {
+      margin: 10px;
+      .ant-btn {
+        margin: 6px;
+        background-color: #fff;
+        color: #000;
+        border-color: #cccccc;
+        border-radius: 2px;
+      }
+    }
+  }
+}
+
+
+
+
+
+
+

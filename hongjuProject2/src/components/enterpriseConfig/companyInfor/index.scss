@@ -1,0 +1,177 @@
+.companyInfo-page{
+  .companyInforHead{
+    padding-left:10px;
+  }
+  .ant-row-flex{
+      padding:8px 0;
+      line-height: 38px;
+    }
+    .ant-col-5{
+      color:#999;
+      width: 17.833333%;
+      font-size:13px;
+    }
+    .ant-col-19 {
+      width: 81.166667%;
+    }
+    .ant-col-2{
+      color:#999;
+      //margin-right:14px;
+      font-size:13px;
+    }
+    .ant-col-19{
+      height:38px;
+    }
+    .ant-input{
+      width:312px;
+      height:38px;
+      font-size:14px;
+    }
+    .ant-select{
+      height:38px;
+      line-height: 38px;
+      vertical-align: middle;
+    }
+    .ant-select-selection--single{
+      height:38px;
+    }
+    .ant-select-selection-selected-value{
+      line-height: 38px;
+    }
+  .companyInfoBody{
+    padding:10px 40px;
+    .companyName{
+      position: relative;
+      .require-star{
+        position: absolute;
+        top:-10px;
+        right:-10px;
+      }
+    }
+    .companyAddress,.companyInforName{
+      text-overflow: ellipsis;
+      overflow: hidden;
+      white-space: nowrap;
+    }
+    .ant-calendar-picker{
+      width:100%;
+    }
+    .ant-calendar-picker-clear{
+      right:10px;
+    }
+    .ant-calendar-picker-icon{
+      right:10px;
+    }
+    .uploadLogo{
+      height:100px;
+      .companyLogoSpan{
+        display: inline-block;
+        height:72px;
+        line-height:72px;
+      }
+      .companyLogo{
+        display: inline-block;
+        height:72px;
+        width:72px;
+        //border-radius: 50%;
+        border:1px solid #eee;
+        img{
+          //border-radius:50%;
+        }
+      }
+    }
+  }
+  .billInfoBody{
+    .billInfoBodyTitle{
+      font-size: 14px;
+      font-weight: bolder;
+      line-height: 38px;
+      margin-left: -20px;
+    }
+    .uploadPicBtn{
+      width:155px;
+      height:35px;
+      line-height: 30px;
+      text-align: center;
+      padding:0;
+    }
+    .taxPicWrap{
+      position: relative;
+      display: inline-block;
+      width:200px;
+      height:200px;
+      margin:10px;
+      padding:10px;
+      background:#d8d8d8;
+      border:1px solid #979797;
+      .deleteCross{
+        position: absolute;
+        right:-6px;
+        top:-6px;
+        width:14px;
+        height:14px;
+        background: red;
+        border-radius: 50%;
+        cursor: pointer;
+        .anticon-close{
+          position: absolute;
+          color:#fff;
+            font-size: 12px;
+            left: 1px;
+            top: 1px;
+        }
+      }
+    }
+  }
+  .ant-select-arrow:before{
+    content: '\E606';
+  }
+  .anticon-exclamation-circle-o{
+    color:$hongju-blue;
+    cursor: pointer;
+  }
+  .uploadLogoDiv{
+    width:44%;
+    height:60px;
+      position: relative;
+    .uploadLogoBtn{
+      .uploadLogoSpan{
+          color:#449ff7;
+          display: inline-block;
+          cursor:pointer;
+          position: absolute;
+          right:-50px;
+          bottom:-16px;
+        }
+    }
+    .ant-btn-primary{
+      position: absolute;
+      right:-100px;
+      bottom:-16px;
+    }
+  }
+}
+.ReactModal__Overlay{
+  width:500px;
+  margin:0 auto;
+}
+.zoom-in{
+  position: absolute;
+  top: 1000%;
+  right: 250px;
+}
+.zoom-out{
+  position: absolute;
+  top: 1000%;
+  right: 200px;
+}
+.content-upload{
+  .ant-upload-list-item-info{
+    .anticon-cross{
+      display: none;
+    }
+  }
+}
+.companyTaxIdentifyNumber{
+  display: inline-block;
+}

@@ -1,0 +1,72 @@
+.edit-table {
+  //表格多选框的选择范围
+  .ant-table-fixed .ant-table-thead > tr > th.ant-table-selection-column {
+    padding-top: 0 !important;
+    padding-bottom: 0 !important;
+  }
+  .ant-checkbox {
+    padding: 16px 20px;
+  }
+  .ant-table-fixed .ant-table-tbody tr > td {
+    padding: 0 10px 0 14px;
+  }
+
+  .edit-table-row {
+  }
+  .edit-table-row-negative {
+  }
+  &.edit-table-editing {
+    .ant-table-body {
+      //padding-bottom: 300px;
+      tr {
+        background-color: #ecf6fd;
+      }
+    }
+  }
+  .require-star {
+    position: static !important;
+  }
+  .ant-table-thead {
+    tr th {
+      padding-top: 12px;
+      padding-bottom: 10px;
+      color: $hongju-tip-color;
+      padding-left: 14px;
+    }
+  }
+  .ant-table-tbody {
+    tr > td {
+      padding: 0 10px;
+      padding-left: 16px;
+      border-right: none;
+    }
+    tr > td:last-child {
+      border-right: solid 1px $hongju-border-color;
+    }
+    .ant-table-row {
+      height: 50px;
+    }
+  }
+  .edit-row-container {
+    padding: 5px 0;
+    input.edit-table-td-input {
+      display: inline-block;
+      width: 100%;
+      height: 28px;
+      border: none;
+      border-radius: 0;
+    }
+    .ant-input-number {
+      border: none;
+      .ant-input-number-handler-wrap {
+        //display: none;
+      }
+    }
+    .common-choose-box {
+      height: 100%;
+    }
+    .common-choose-input-box {
+      border: none;
+    }
+  }
+}

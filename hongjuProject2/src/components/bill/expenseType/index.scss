@@ -1,0 +1,296 @@
+.expenseType-page {
+  .expensePage-right-head {
+    padding-left: 10px;
+  }
+  .billingName {
+    position: relative;
+    min-width: 100px;
+  }
+  .billingNameHighSetting {
+    color: $hongju-blue;
+  }
+  .billingNameEdit {
+    margin-left: 10px;
+    cursor: pointer;
+    color: $hongju-blue;
+    position: absolute;
+    right: -10px;
+    top: 0px;
+    font-size: 16px;
+  }
+  .billingSettingInfoHeadSpanEdit {
+    display: inline-block;
+    height: 49px;
+    //line-height: 49px;
+    width: 30px;
+    text-align: center;
+    cursor: pointer;
+    font-size: 14px;
+    color: $hongju-blue;
+    float: right;
+  }
+  .highSettingPageHead {
+    padding: 5px 0 0 20px;
+    .billingNameHighSettingBack {
+      font-size: 15px;
+      color: #333;
+      cursor: pointer;
+    }
+    .billingNameHighSetting {
+      padding-top: 5px;
+      color: $hongju-blue;
+    }
+  }
+  .billSettingInfo {
+    margin: 20px 0 0 20px;
+    background: #fff;
+    width: 377px;
+    font-size: 14px;
+  }
+  .billingSettingInfo {
+    margin-top: 20px;
+    //width:382px;
+    //min-height:450px;
+    border: 1px solid $hongju-border-color;
+    position: relative;
+    //   z-index: 6;
+    background: #fff;
+    box-shadow: 0px 6px 15px 0px #c6c6c6;
+    border-radius: 3px;
+    .billingSettingInfoHead {
+      //height:50px;
+      padding: 17px 28px 17px 28px;
+      text-align: center;
+      color: #333;
+      font-size: 15px;
+      box-sizing: border-box;
+      position: relative;
+
+      .billingSettingInfoHeadSpan {
+        display: inline-block;
+        width: 80%;
+        text-align: center;
+        text-overflow: ellipsis;
+        overflow: hidden;
+        white-space: nowrap;
+      }
+      .billingSettingInfoHeadSpanEdit {
+        position: absolute;
+        top: 17px;
+        right: 20px;
+        display: inline-block;
+        width: 30px;
+        text-align: center;
+        cursor: pointer;
+        .anticon-edit {
+          font-size: 16px;
+          color: $hongju-blue;
+        }
+      }
+    }
+    .billingSettingDataNullWrap {
+      padding: 0 28px;
+      display: inline-block;
+      width: 100%;
+    }
+    .billingSettingDataNull {
+      display: inline-block;
+      width: 100%;
+      height: 40px;
+      line-height: 40px;
+      border: 1px solid $hongju-border-color;
+      text-align: center;
+      cursor: pointer;
+      color: #999;
+    }
+    .eidtBillingSettingInfo {
+      height: 45px;
+      padding: 0 28px 10px 28px;
+      color: #999;
+      width: 100%;
+      .eidtBillingSettingInfoIn {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        flex: 1;
+      }
+      span {
+        float: left;
+        line-height: 40px;
+      }
+    }
+    .billingSettingInfoListUl {
+      padding: 0 26px 0 26px;
+      li {
+        width: 100%;
+        height: 40px;
+        padding-left: 10px;
+        line-height: 40px;
+        border: 1px solid $hongju-border-color;
+        margin-bottom: 10px;
+        text-overflow: ellipsis;
+        overflow: hidden;
+        white-space: nowrap;
+      }
+      .itemCon {
+        position: relative;
+      }
+      .itemIsRequired {
+        position: absolute;
+        right: -8px;
+        top: -18px;
+        color: #ed7140;
+      }
+    }
+    .billingSettingInfoEditListUl {
+      padding: 0 28px 0 28px;
+      li {
+        width: 100%;
+        height: 40px;
+        line-height: 40px;
+        border: 1px solid $hongju-border-color;
+        margin-bottom: 10px;
+        display: flex;
+        justify-content: space-between;
+        position: relative;
+        cursor: move;
+        .billingSettingInfoEditListUlSpan {
+          line-height: 40px;
+        }
+        .editSpan {
+          white-space: nowrap;
+          text-overflow: ellipsis;
+          overflow: hidden;
+          color: #333;
+        }
+        .anticon-cross {
+          cursor: pointer;
+          font-family: PingFangSC-Semibold;
+          font-size: 12px;
+          color: #f43530;
+          padding-top: 15px;
+          position: absolute;
+          right: 3px;
+        }
+      }
+      li:hover {
+        //border:1px solid $hongju-blue;
+      }
+
+    }
+    .dragRemark {
+      width: 20px;
+      position: absolute;
+      left: 8px;
+      top: 170px;
+      color: #ccc;
+      font-family: PingFangSC-Regular;
+      font-size: 12px;
+      line-height: 12px;
+    }
+    .dragRemarkColro {
+      color: $hongju-blue;
+    }
+  }
+  .billingSettingInfoHover {
+    border: 1px solid $hongju-blue;
+  }
+  .basicArea {
+    .billingConWrap {
+      width: 100%;
+      overflow-y: auto;
+    }
+  }
+  .billingSettingInfoListUlWrap {
+    //max-height:430px;
+    overflow-y: auto;
+  }
+  .billingSettingInfoEditListUlWrap {
+    //max-height:390px;
+    overflow-y: auto;
+    color: #999;
+  }
+  .highSettingPageData {
+    width: 375px;
+    background: #ffffff;
+    box-shadow: 0px 6px 15px 0px #c6c6c6;
+    border-radius: 3px;
+    margin: 20px 0 0 20px;
+    padding: 0 30px 15px 30px;
+    border: 1px solid $hongju-border-color;
+    position: relative;
+    .highSettingPageDataHead {
+      display: inline-block;
+      width: 313px;
+      height: 62px;
+      line-height: 62px;
+      text-align: center;
+    }
+    .highSettingPageDataHeadIcon {
+      position: absolute;
+      right: 30px;
+      top: 25px;
+      width: 16px;
+      height: 18px;
+      text-align: center;
+      font-size: 16px;
+      color: $hongju-blue;
+    }
+    .highSettingPageDataHeadView {
+      position: absolute;
+      right: 30px;
+      top: 25px;
+      width: 32px;
+      height: 18px;
+      text-align: center;
+      color: $hongju-blue;
+      font-size: 12px;
+    }
+    .ant-select-selection {
+      border: 0;
+    }
+    .checkSwitch {
+      float: right
+    }
+    .highSettingSponsor {
+      padding: 0 10px;
+      margin-bottom: 10px;
+    }
+    .highSettingSwitch {
+      padding: 0 10px;
+      .highSettingPageDataLi {
+        margin-bottom: 13px;
+        height: 22px;
+        line-height: 22px;
+      }
+    }
+    .highSetting-label {
+      color: #999;
+    }
+  }
+  .highSettingPageDataHover {
+    border: 1px solid $hongju-blue;
+  }
+  .billingSettingBtnClose {
+    cursor: pointer
+  }
+  .ant-tabs-nav {
+    font-size: 14px !important;
+    float: none;
+    width: 200px;
+    margin: 0 auto;
+  }
+  .ant-tabs-bar {
+    margin-bottom: 0;
+    border: none;
+  }
+  .anticon-plus-circle {
+    font-size: 14px;
+  }
+  .ant-select-arrow:before {
+    content: "\E606";
+  }
+  .highBillSlide-item {
+    min-height: 50px !important;
+  }
+}

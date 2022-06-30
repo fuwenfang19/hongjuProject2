@@ -1,0 +1,180 @@
+.customFile-page {
+    font-family: "微软雅黑";
+  i {
+    margin-right: 8px;
+  }
+  .not-saved{
+    color: $hongju-label-color;
+  }
+  .table-content{
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    max-width: 180px;
+  }
+  .customFile-right {
+    width: 100%;
+    .content-right-head {
+      height: 56px;
+      line-height: 56px;
+      border: none;
+      margin-bottom: 0;
+      .head-left {
+        line-height: 56px;
+        font-size: 16px;
+        text-indent: 19px;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        max-width: 300px;
+      }
+      .head-right{
+        margin-right: 5px;
+      }
+      .content-right-head-input {
+        width: 300px;
+        height: 38px;
+        margin: 8px;
+        font-size: 16px;
+
+      }
+    }
+
+    .custom-remark {
+      width: 40%;
+      display: inline-block;
+      line-height: 24px;
+      margin: 10px 0;
+      margin-left: 12px;
+      color: #999;
+      .custom-isUsed {
+        color: #333;
+        .ant-radio-wrapper{
+          margin: 0 20px;
+        }
+      }
+      input {
+        margin-right: 2px;
+      }
+      .content-right-head-input{
+        width: 70%;
+        border-radius: 5px;
+        height: 32px;
+        border: 1px solid #d8d8d8;
+        font-size: 14px;
+      }
+    }
+    .single-line{
+    margin: 0;
+  }
+    .found-table {
+      .ant-table-thead {
+        .ant-table-selection-column {
+          padding-left: 20px;
+        }
+
+      }
+      .ant-table-scroll {
+        .ant-table-selection-down {
+          display: none;
+        }
+      }
+    }
+  }
+  .DepartmentData-page-head {
+    height: 44px;
+    width: 100%;
+    line-height: 44px;
+    padding: 0 10px 0 0;
+    margin: 2px 0;
+    .DepartmentData-page-head1, .DepartmentData-page-head2, .DepartmentData-page-head-center {
+      height: 44px;
+      float: left;
+    }
+      .DepartmentData-page-head1{
+      width: 20%;
+      text-indent: 19px;
+      .anticon{
+        margin-left: 3px;
+        font-size: x-small;
+      }
+    }
+    .DepartmentData-page-head-center{
+      width: 40%;
+    }
+    .DepartmentData-page-head2{
+      text-align: right;
+      width: 40%;
+      cursor: pointer;
+      .anticon-search,.anticon-user{
+        margin-right: 4px;
+      }
+      .DepartmentData-page-head2-marg,.ant-input-preSuffix-wrapper,.DepartmentData-page-head2-marg1{
+        margin:0 6px;
+        float: right;
+      }
+      .DepartmentData-page-head2-marg1{
+               display: none;
+             }
+      .DepartmentData-page-head2-marg1.DepartmentData-page-head2-marg-show{
+        display: block;
+      }
+      .DepartmentData-page-head2-marg-hide{
+        display: none;
+      }
+      .ant-input-preSuffix-wrapper{
+        width: 100%;
+        position: relative;
+        display: inline-block;
+        .DepartmentData-page-head2-search{
+          //width: 160px;
+          //height: 24px;
+        }
+      }
+    }
+    .ant-confirm-confirm .ant-confirm-btns {
+      clear: both;
+    }
+  }
+.ant-table-tbody > tr > td {
+    padding: 6px 20px;
+  }
+  .ant-table-thead > tr > th{
+    padding: 16px 20px;
+  }
+  .table-content{
+    height: 36px;
+    line-height: 36px;
+  }
+  .found-table-row-input {
+    display: block;
+    height: 36px;
+    width: 100%;
+    border: 0;
+    box-sizing: border-box;
+  }
+  .DepartmentData-page-head-hide {
+    background: #108ee9;
+    color: #fff;
+    .DepartmentData-page-head-hide1, .DepartmentData-page-head-hide2 {
+      display: inline-block;
+      width: 50%;
+      height: 30px;
+    }
+    .DepartmentData-page-head-hide1, .ant-btn-primary {
+      border: none;
+      background: none;
+      outline: none;
+    }
+    .DepartmentData-page-head-hide2 {
+      text-align: right;
+      .DepartmentData-page-head2-marg {
+        margin: 0 10px;
+        cursor: pointer;
+        i{
+          font-size:16px;
+        }
+      }
+    }
+  }
+}

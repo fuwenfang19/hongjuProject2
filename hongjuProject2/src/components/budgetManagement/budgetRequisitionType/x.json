@@ -1,0 +1,73 @@
+{
+    "code": "",
+    "parent": "BudgetApplication",
+    "color": null,
+    "company": 3,
+    "remark": "",
+    "approvalDefine": "{\"enable\": false, \"condition\": \"\", \"author\": \"\"}",
+    "fromCorp": false,
+    "budget_settings": {
+        "budgetConfigPlans": [
+            {
+                "id": 1
+            }
+        ],
+        "headerDimensionRefs": [
+            {
+                "budgetOrder": 1,
+                "dimensionRef": 3
+            }
+        ],
+        "bodyDimensionRefs": [
+            {
+                "budgetOrder": 1,
+                "dimensionRef": 4
+            },
+            {
+                "budgetOrder": 2,
+                "dimensionRef": 1
+            }
+        ],
+        "horizontalBody": [
+            {
+                "showOrder": 1,
+                "dimensionRef": 4
+            }
+        ],
+        "horizontalBodyValues": [
+            {
+                "value": 157,
+                "dimensionRef": 4
+            }
+        ],
+        "verticalBody": [
+            {
+                "showOrder": 1,
+                "dimensionRef": 1
+            }
+        ],
+        "verticalBodyValues": [
+            {
+                "value": 7017,
+                "dimensionRef": 1
+            }
+        ],
+        "permissions": [
+            {
+                "staffItem": 707
+            }
+        ]
+    },
+    "digestDesign": [],
+    "digestDefine": "[ {u\"title\":  u\"创建时间\", u\"col\":  u\"createTime\",  \"func\": u\"strftime('%m-%d %H:%M')\",  \"format\": u\"出差申请 %s\"},{u\"title\":  u\"事由\", u\"col\": u\"reason\",  \"format\":  u\"%s\"} ,  {u\"title\":  u\"目的城市\", u\"col\":  u\"toCitys\",  \"format\":u\"目的地-%s\"}]",
+    "icon": 1,
+    "kind": 1,
+    "group": 1,
+    "name": "预算编制申afa请单类型1",
+    "isUsed": true,
+    "viewdefines": [],
+    "canModify": true,
+    "useBudget": false,
+    "canDeleteAfterApproval": false,
+    "autogenvoucher": false
+}

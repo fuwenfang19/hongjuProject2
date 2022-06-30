@@ -1,0 +1,140 @@
+/*
+*create by yangyfe 2017.02.24
+*部门成员的公共样式
+*/
+
+.DepartmentData-page {
+  font-family: "微软雅黑";
+  i{
+    margin-right: 8px;
+  }
+  .content-right-head{
+    .head-left{
+      overflow: hidden;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+      max-width: 300px;
+    }
+  }
+  .DepartmentData-table{
+     .ant-table-selection-column{
+        text-align: left;
+      }
+     .ant-table-row{
+       height:50px;
+     }
+    .ant-table-body{
+      cursor: pointer;
+    }
+     .ant-table-selection-column{
+       border-right:none;
+     }
+  }
+   .ant-table-selection-down{
+      display: none;
+     
+    }
+  .DepartmentData-righter{
+    .DepartmentData-page-head{
+      display: none;
+    }
+    .DepartmentData-page-head-hide{
+      display: block;
+    }
+  }
+  .DepartmentData-righter-bit{
+    .DepartmentData-page-head{
+      display: block;
+    }
+    .DepartmentData-page-head-hide{
+      display: none;
+    }
+  }
+
+  .DepartmentData-page-head{
+    height: 44px;
+    width: 100%;
+    line-height: 44px;
+    .DepartmentData-page-head1,.DepartmentData-page-head2,.DepartmentData-page-head-center{
+      height:44px;
+      float: left;
+    }
+    .DepartmentData-page-head1{
+      width: 20%;
+      .anticon{
+        margin-left: 3px;
+        font-size: x-small;
+        cursor: pointer;
+      }
+    }
+    .DepartmentData-page-head-center{
+      width: 40%;
+    }
+    .DepartmentData-page-head2{
+      text-align: right;
+      width: 40%;
+      cursor: pointer;
+      .anticon-search,.anticon-user{
+        margin-right: 4px;
+      }
+      .DepartmentData-page-head2-marg,.ant-input-preSuffix-wrapper,.DepartmentData-page-head2-marg1{
+        margin:0 6px;
+        float: right;
+      }.DepartmentData-page-head2-marg1{
+               display: none;
+             }
+      .DepartmentData-page-head2-marg1.DepartmentData-page-head2-marg-show{
+        display: block;
+      }
+      .DepartmentData-page-head2-marg-hide{
+        display: none;
+      }
+      .ant-input-preSuffix-wrapper{
+        width: 100%;
+        position: relative;
+        display: inline-block;
+        .DepartmentData-page-head2-search{
+          //width: 160px;
+          //height: 24px;
+        }
+      }
+    }
+    .ant-confirm-confirm .ant-confirm-btns{
+      clear: both;
+    }
+  }
+.DepartmentData-page-head-hide{
+  height: 44px;
+  background: #108ee9;
+  color: #fff;
+  .DepartmentData-page-head-hide1,.DepartmentData-page-head-hide2{
+    display: inline-block;
+    width: 50%;
+    height:32px;
+  }
+  .DepartmentData-page-head-hide1,.ant-btn-primary{
+    border:none;
+    background: none;
+    outline: none;
+  }
+  .DepartmentData-page-head-hide2{
+    text-align: right;
+    cursor: pointer;
+    .DepartmentData-page-head2-marg{
+      margin:0 10px;
+    }
+  }
+}
+}
+.ant-dropdown{
+  span{
+    color: #333;
+  }
+  .ant-dropdown-menu-item-selected > a{
+    color: #333;
+    background: none;
+  }
+}
+
+
+

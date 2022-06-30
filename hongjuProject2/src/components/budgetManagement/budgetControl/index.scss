@@ -1,0 +1,117 @@
+.budgetControl-page{
+  .project-left-btns {
+    margin-top: 6px;
+    .add-btn{
+      height:32px;
+    }
+  }
+  .entry-rule-left-content-item{
+    max-width:250px;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+  }
+  .anticon-search{
+    //padding-left: 50px !important;
+  }
+  .head-left{
+    .ant-input{
+      height:32px;
+      line-height: 32px;
+      width:180px;
+    }
+    .caseName{
+      display: inline-block;
+      max-width:150px;
+      text-overflow: ellipsis;
+      overflow: hidden;
+      white-space: nowrap;
+    }
+  }
+  .repayType{
+    display: flex;
+    justify-content: flex-start;
+    height: auto;
+    //line-height: 34px;
+    margin: 20px 0 5px 8px;
+    .repayTypeLeft{
+      margin-right:25px;
+      position: relative;
+      min-width: 56px;
+    }
+    .repayTypeChose{
+      margin-top:-7px;
+    }
+  }
+  .dimension{
+    display: flex;
+    justify-content: flex-start;
+    min-height: 45px;
+    line-height: 35px;
+    margin-left:8px;
+    box-sizing: border-box;
+    border-bottom: solid 1px $hongju-hr-color;
+  }
+  .dimensionLeft{
+    margin-right:25px;
+    min-width: 85px;
+  }
+  .dimensionRight{
+    margin-right:15px;
+  }
+  .budgetControlTableHead{
+    display: flex;
+    justify-content: space-between;
+    height: 44px;
+    width: 100%;
+    line-height: 44px;
+    padding: 0 10px 0 10px;
+    margin: 2px 0;
+    .addBtn{
+      cursor: pointer;
+    }
+  }
+  .budgetControlTableHead-chose{
+    display: flex;
+    justify-content: space-between;
+    height: 44px;
+    width: 100%;
+    line-height: 44px;
+    padding: 0 10px 0 10px;
+    margin: 2px 0;
+    background: #108ee9;
+    color: #fff;
+    .budgetControlTableHead-chose-right-marg {
+        margin: 0 10px;
+        cursor: pointer;
+    }
+  }
+}
+.batch-edit-budgetControl{
+  .ant-row{
+    display: flex;
+    margin-bottom: 30px;
+  }
+  .ant-input-number{
+    margin: 0 20px;
+    padding:0;
+  }
+  .customRangeType{
+    width: 220px;
+    margin: 0 20px;
+  }
+  .ant-modal-body {
+    padding: 36px;
+  }
+}
+
+.copyPntrolPlan-budgetControl{
+  .copyControlWrapper{
+    height:250px;
+    overflow-y: auto;
+    margin:10px 0;
+    li{
+      margin:5px 0;
+    }
+  }
+}
